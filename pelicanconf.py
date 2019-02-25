@@ -3,8 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Aiyana'
-SITENAME = "Aiyana's Blog"
+SITENAME = "Aiyana Brooks"
 SITEURL = ''
+FAVICON = 'images/favicon.png'
 
 PATH = 'content'
 
@@ -20,6 +21,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
+DISPLAY_PAGES_ON_MENU = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -29,6 +31,7 @@ RSS_FEED_SUMMARY_ONLY = False
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
+
 
 
 # Blogroll

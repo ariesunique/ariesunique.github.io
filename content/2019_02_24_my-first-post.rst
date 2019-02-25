@@ -3,7 +3,7 @@ My First Post
 
 :date: 2019-02-24 15:57
 :tags:
-:category:
+:category: blog
 :slug: my-first-post
 :summary: This is the summary.
 
