@@ -7,7 +7,7 @@ TEMPLATE = """
 
 :date: {year}-{month:02d}-{day:02d} {hour}:{minute:02d}
 :tags:
-:category:
+:category: blog
 :slug: {slug}
 :summary: This is the summary.
 
