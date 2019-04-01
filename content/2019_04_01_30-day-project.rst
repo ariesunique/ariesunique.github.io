@@ -1,0 +1,58 @@
+========================
+30 DAY PROJECT CHALLENGE
+========================
+
+:date: 2019-04-01 17:20
+:tags: 30-day-project-challenge
+:category: blog
+:slug: 30-day-project-challenge
+:summary: Each month I will tackle a different python project. The goal is to focus on the **process** of learning, rather than on the project **result**. To this end, I am not limiting myself in regards to the difficulty of the project. My goal is simply to choose a project that interests my and work on it daily for 30 days and see how far I get. If at the end, I've got a working product, great, if not, at least I would have learned something. At the end of the 30 days, I will begin a new project.
+
+--------------------------------------
+What is it?
+--------------------------------------
+
+The **30 Day Project Challenge** is my commitment to working on a project of my choosing daily for 30 days. At the end of this time period, I will do a self-assessment.
+
+--------------------------------------
+Why do it?
+--------------------------------------
+
+There are two pieces of advice I often hear given to developers interested in picking up a new skill: 
+
+1. **Work on something real**
+    Choose a real project (something that interests you). Doing tutorials is fun, but the real learning happens when you are forced to figure things out for yourself. 
+
+2. **Work incrementally**
+    No one can train for a marathon in a single day. The way to climb a mountain is one step at a time. One of my favorite authors and one of the most prolific writers of all time, Stephen King, maintains the habit of writing daily for a set time period each day.
+
+This challenge fulfills both of those goals. 
+
+--------------------------------------
+How will it work?
+--------------------------------------
+
+1. I must create my own project. While I can use tutorials to assist, the goal is to develop my own thing, not just blindly follow tutorials.
+
+2. I must commit to working on this every day for at least 20 minutes (barring some sort of emergency).
+
+3. At the end of the 30 days, I will evaluate my progress, and then *move on to a new project*. 
+
+4. The self-assessment must answer the following questions:
+
+   a. What did you learn?
+   b. How far did you get?
+   c. What were the roadblocks?
+   d. What would you do differently?
+   e. How do you feel about what you accomplished?
+
+Why 30 days?
+~~~~~~~~~~~~
+
+This is key - this ensures that my learning doesn't stall. It is very easy to get stuck on a problem and feel unwilling to start anything new until the roadblock is solved. By setting the 30-day limit, I remain focused on the **process** of learning, rather than on the **result** (after all, I'm not trying to reinvent the wheel). 
+
+--------------------------------------
+Let's get started?
+--------------------------------------
+
+I will be using this blog to keep track of my learning journey. Stay Tuned!!!
