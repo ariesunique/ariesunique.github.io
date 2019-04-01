@@ -6,7 +6,7 @@
 :tags: 30-day-project-challenge
 :category: blog
 :slug: 30-day-project-challenge
-:summary: Each month I will tackle a different python project. The goal is to focus on the **process** of learning, rather than on the project **result**. To this end, I am not limiting myself in regards to the difficulty of the project. My goal is simply to choose a project that interests my and work on it daily for 30 days and see how far I get. If at the end, I've got a working product, great, if not, at least I would have learned something. At the end of the 30 days, I will begin a new project.
+:summary: Each month I will tackle a different python project. The goal is to focus on the **process** of learning, rather than on the project **result**. To this end, I am not limiting myself in regards to the difficulty of the project (although, most of these projects will probably be something reasonable that can be accomplished in 30 days). My goal is simply to choose a project that interests me and to work on it daily for 30 days to see how far I get. If at the end, I've got a working product, great, if not, at least I would have learned something. At the end of the 30 days, I will begin a new project.
 
 --------------------------------------
 What is it?
