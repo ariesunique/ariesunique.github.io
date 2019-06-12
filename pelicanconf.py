@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Aiyana'
 SITENAME = "Aiyana Brooks"
-SITEURL = ''
+SITEURL = 'https://aiyanabrooks.com'
 FAVICON = 'images/favicon.png'
 
 PATH = 'content'
@@ -17,13 +17,13 @@ DEFAULT_LANG = 'en'
 
 # Theme settings
 THEME = "themes/pelican-bootstrap3"
-BOOTSTRAP_THEME = 'cerulean'
-ABOUT_ME = "Here's a blurb about me. Bronx engineer, Aries, mom"
+BOOTSTRAP_THEME = 'cerulean'  #try flatly if you get sick of cerulean
+ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things."
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-DISPLAY_PAGES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -48,3 +48,4 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+LOAD_CONTENT_CACHE = False

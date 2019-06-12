@@ -2,6 +2,7 @@ import sys
 from datetime import datetime
 
 TEMPLATE = """
+{hashes}
 {title}
 {hashes}
 
@@ -23,7 +24,7 @@ def make_entry(title):
     f_create = "content/{}_{:0>2}_{:0>2}_{}.rst".format(
         today.year, today.month, today.day, slug)
     t = TEMPLATE.strip().format(title=title,
-                                hashes='#' * len(title),
+                                hashes='=' * len(title),
                                 year=today.year,
                                 month=today.month,
                                 day=today.day,
