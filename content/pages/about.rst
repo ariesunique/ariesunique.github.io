@@ -4,26 +4,22 @@ About
 :url: pages/about.html
 :save_as: pages/about.html
 
-This is the About page.
 
 Here's some stuff `about me`_.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis commodo diam ut ultricies. Ut nec vulputate erat. Cras pharetra orci sit amet condimentum venenatis. Curabitur et bibendum nunc. Nullam nisl massa, ornare id velit vel, finibus tempor ante. Quisque egestas tortor elit, eget congue felis tristique sit amet. Pellentesque imperdiet luctus metus, sit amet porttitor lacus lobortis vel.
+Thanks for visiting my page! For 10 years, I worked as a software engineer for large companies such as Citigroup and The New York Times. During that time, I primarily used Java and J2EE. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis commodo diam ut ultricies. Ut nec vulputate erat. Cras pharetra orci sit amet condimentum venenatis. Curabitur et bibendum nunc. Nullam nisl massa, ornare id velit vel, finibus tempor ante. Quisque egestas tortor elit, eget congue felis tristique sit amet. Pellentesque imperdiet luctus metus, sit amet porttitor lacus lobortis vel.
+When my oldest daughter was born, I decided to stay home with her, while also using the time to pursue other interests. In 2016, I completed a Masters in Teaching English to Speakers of Other Languages (TESOL), and began teaching English to adults in community and academic programs. During this time, I also began teaching myself Python and completely fell in love with the language. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis commodo diam ut ultricies. Ut nec vulputate erat. Cras pharetra orci sit amet condimentum venenatis. Curabitur et bibendum nunc. Nullam nisl massa, ornare id velit vel, finibus tempor ante. Quisque egestas tortor elit, eget congue felis tristique sit amet. Pellentesque imperdiet luctus metus, sit amet porttitor lacus lobortis vel.
+Currently, I teach English part-time and freelance on python projects. I'm very interested in Natural Language Processing as it is a natural bridge between my interest in language and my love of programming.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis commodo diam ut ultricies. Ut nec vulputate erat. Cras pharetra orci sit amet condimentum venenatis. Curabitur et bibendum nunc. Nullam nisl massa, ornare id velit vel, finibus tempor ante. Quisque egestas tortor elit, eget congue felis tristique sit amet. Pellentesque imperdiet luctus metus, sit amet porttitor lacus lobortis vel.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mollis commodo diam ut ultricies. Ut nec vulputate erat. Cras pharetra orci sit amet condimentum venenatis. Curabitur et bibendum nunc. Nullam nisl massa, ornare id velit vel, finibus tempor ante. Quisque egestas tortor elit, eget congue felis tristique sit amet. Pellentesque imperdiet luctus metus, sit amet porttitor lacus lobortis vel.
 
 
 How I built `this blog`_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce nibh velit, convallis non pretium eu, aliquam quis turpis. Pellentesque placerat convallis lacus vel rhoncus. Vestibulum accumsan, nulla pretium pellentesque vulputate, massa metus tempus enim, vel venenatis est dolor ac urna. Maecenas faucibus rutrum est eu vehicula. Pellentesque interdum sem aliquet dolor mattis, ullamcorper tempor nunc porttitor. Duis euismod luctus enim sit amet efficitur. Ut vehicula, nisi sed consequat luctus, erat urna porttitor risus, et consectetur odio dolor ut augue. Integer ac malesuada turpis, vel pulvinar tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque cursus pellentesque libero, at sagittis erat. Nam placerat bibendum justo, eget rhoncus urna eleifend vitae.
+This blog is built using Pelican, a static-site generator built in python, and hosted using GitHubPages. It uses the Bootstrap theme.
 
 .. _about me:
 .. _this blog:

@@ -18,7 +18,8 @@ DEFAULT_LANG = 'en'
 # Theme settings
 THEME = "themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'cerulean'  #try flatly if you get sick of cerulean
-ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things."
+ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student."
+AVATAR = "images/profile.png"
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
@@ -48,4 +49,4 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-LOAD_CONTENT_CACHE = False
+LOAD_CONTENT_CACHE = True
