@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Thu, 04 Apr 2019 08:21:00 -0400</lastBuildDate><item><title>Stock Tracker</title><link>https://aiyanabrooks.com/stock-tracker.html</link><description>&lt;div class="section" id="overview"&gt;
-&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Write a CLI tool.&lt;/p&gt;
+<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Thu, 04 Apr 2019 08:21:00 -0400</lastBuildDate><item><title>Stock Tracker</title><link>https://aiyanabrooks.com/stock-tracker.html</link><description>&lt;div class="section" id="description"&gt;
+&lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;A simple command line interface to look up the stock quote of a given stock symbol&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example Usage&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; stocktracker GOOG
+&amp;gt;&amp;gt; stocktracker GOOG AAPL FB
+&amp;gt;&amp;gt; stocktracker -f stocks.txt
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Code&lt;/strong&gt;: Lives in GitHub&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="section" id="days-of-coding"&gt;
-&lt;h2&gt;30 Days of Coding&lt;/h2&gt;
-&lt;div class="section" id="day-1"&gt;
-&lt;h3&gt;DAY 1&lt;/h3&gt;
-&lt;p&gt;blah blah blah blah blah&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="day-2"&gt;
-&lt;h3&gt;DAY 2&lt;/h3&gt;
-&lt;p&gt;blah blah blah blah blah&lt;/p&gt;
-&lt;/div&gt;
+&lt;div class="section" id="what-i-learned"&gt;
+&lt;h2&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;I only worked on this for about 5 consecutive days in short bursts (but this could easily have been done in an hour or two on a single day). I chose this project because I like command-line interfaces and I wanted to work more with the Click library.&lt;/p&gt;
+&lt;p&gt;The first step was to figure out how I would get the stock quotes. I found a nice site with a free API for this purpose - alphavantage. I signed up for a free API key and added this to my config file. I’m using configparser to read the config file. To make this into a true CLI, I added a setup.py file (so the code can be called with a simple command instead of having to type the “python” command to run this).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="assessment"&gt;
 &lt;h2&gt;Assessment&lt;/h2&gt;
+&lt;p&gt;I learned more about Click and ConfigParser, and how to create a setup.py file.
+There is a lot more that could be added to make this more robust, but it works well enough as a simple CLI proof-of-concept. This was a fun little project and I plan to use Click again for future CLI tools.&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Thu, 04 Apr 2019 08:21:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-04-04:/stock-tracker.html</guid><category>30-day-project-challenge</category></item><item><title>30 DAY PROJECT CHALLENGE</title><link>https://aiyanabrooks.com/30-day-project-challenge.html</link><description>&lt;div class="section" id="what-is-it"&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Thu, 04 Apr 2019 08:21:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-04-04:/stock-tracker.html</guid><category>blog</category><category>30-day-project-challenge</category></item><item><title>30 DAY PROJECT CHALLENGE</title><link>https://aiyanabrooks.com/30-day-project-challenge.html</link><description>&lt;div class="section" id="what-is-it"&gt;
 &lt;h2&gt;What is it?&lt;/h2&gt;
 &lt;p&gt;The &lt;strong&gt;30 Day Project Challenge&lt;/strong&gt; is my commitment to working on a project of my choosing daily for 30 days. At the end of this time period, I will do a self-assessment.&lt;/p&gt;
 &lt;/div&gt;
@@ -62,4 +66,4 @@
 &lt;h2&gt;Let's get started?&lt;/h2&gt;
 &lt;p&gt;I will be using this blog to keep track of my learning journey. Stay Tuned!!!&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Mon, 01 Apr 2019 17:20:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-04-01:/30-day-project-challenge.html</guid><category>30-day-project-challenge</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Mon, 01 Apr 2019 17:20:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-04-01:/30-day-project-challenge.html</guid><category>blog</category><category>30-day-project-challenge</category></item></channel></rss>

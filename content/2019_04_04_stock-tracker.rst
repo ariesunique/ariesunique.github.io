@@ -6,29 +6,35 @@ Stock Tracker
 :tags: 30-day-project-challenge
 :category: blog
 :slug: stock-tracker
-:summary: This is the summary.
+:summary: A CLI tool to display a stock quote for a given stock symbol.
 
----------
-Overview
----------
+------------
+Description
+------------
 
-Write a CLI tool. 
+A simple command line interface to look up the stock quote of a given stock symbol
 
------------------
-30 Days of Coding
------------------
+**Example Usage**:
 
-DAY 1
-~~~~~
+ .. code-block:: shell
 
-blah blah blah blah blah
+    >> stocktracker GOOG
+    >> stocktracker GOOG AAPL FB
+    >> stocktracker -f stocks.txt
 
+**Code**: Lives in GitHub
 
-DAY 2
-~~~~~
+---------------
+What I Learned
+---------------
 
-blah blah blah blah blah
+I only worked on this for about 5 consecutive days in short bursts (but this could easily have been done in an hour or two on a single day). I chose this project because I like command-line interfaces and I wanted to work more with the Click library.
 
------------------
+The first step was to figure out how I would get the stock quotes. I found a nice site with a free API for this purpose - alphavantage. I signed up for a free API key and added this to my config file. I’m using configparser to read the config file. To make this into a true CLI, I added a setup.py file (so the code can be called with a simple command instead of having to type the “python” command to run this).
+
+----------
 Assessment
------------------
+----------
+
+I learned more about Click and ConfigParser, and how to create a setup.py file.
+There is a lot more that could be added to make this more robust, but it works well enough as a simple CLI proof-of-concept. This was a fun little project and I plan to use Click again for future CLI tools.
