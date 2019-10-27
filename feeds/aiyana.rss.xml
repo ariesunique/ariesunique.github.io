@@ -5,11 +5,36 @@
 &lt;p&gt;&lt;strong&gt;Example Usage&lt;/strong&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; stocktracker GOOG
+
+Here are the stock prices on &lt;span class="m"&gt;2019&lt;/span&gt;-10-27:
+
+Stock      &lt;span class="nv"&gt;Quote&lt;/span&gt;
+&lt;span class="o"&gt;=========================&lt;/span&gt;
+GOOG       &lt;span class="m"&gt;1265&lt;/span&gt;.1300
+
 &amp;gt;&amp;gt; stocktracker GOOG AAPL FB
-&amp;gt;&amp;gt; stocktracker -f stocks.txt
+
+Here are the stock prices on &lt;span class="m"&gt;2019&lt;/span&gt;-10-27:
+
+Stock      &lt;span class="nv"&gt;Quote&lt;/span&gt;
+&lt;span class="o"&gt;=========================&lt;/span&gt;
+GOOG       &lt;span class="m"&gt;1265&lt;/span&gt;.1300
+AAPL       &lt;span class="m"&gt;246&lt;/span&gt;.5800
+FB         &lt;span class="m"&gt;187&lt;/span&gt;.8900
+
+&amp;gt;&amp;gt; stocktracker -a GOOG AAPL FB
+
+Here are the stock prices on &lt;span class="m"&gt;2019&lt;/span&gt;-10-27:
+
+Stock      &lt;span class="nv"&gt;Quote&lt;/span&gt;
+&lt;span class="o"&gt;=========================&lt;/span&gt;
+AAPL       &lt;span class="m"&gt;246&lt;/span&gt;.5800
+FB         &lt;span class="m"&gt;187&lt;/span&gt;.8900
+GOOG       &lt;span class="m"&gt;1265&lt;/span&gt;.1300
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Code&lt;/strong&gt;: Lives in GitHub&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Code&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;Full &lt;a class="reference external" href="https://github.com/ariesunique/30-day-project-challenge/tree/master/stocktracker"&gt;source code&lt;/a&gt; in GitHub&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-i-learned"&gt;
 &lt;h2&gt;What I Learned&lt;/h2&gt;
