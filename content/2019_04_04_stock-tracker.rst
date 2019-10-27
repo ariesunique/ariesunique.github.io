@@ -19,10 +19,37 @@ A simple command line interface to look up the stock quote of a given stock symb
  .. code-block:: shell
 
     >> stocktracker GOOG
-    >> stocktracker GOOG AAPL FB
-    >> stocktracker -f stocks.txt
 
-**Code**: Lives in GitHub
+    Here are the stock prices on 2019-10-27:
+
+    Stock      Quote
+    =========================
+    GOOG       1265.1300
+
+    >> stocktracker GOOG AAPL FB
+
+    Here are the stock prices on 2019-10-27:
+
+    Stock      Quote
+    =========================
+    GOOG       1265.1300
+    AAPL       246.5800
+    FB         187.8900
+
+    >> stocktracker -a GOOG AAPL FB
+
+    Here are the stock prices on 2019-10-27:
+
+    Stock      Quote
+    =========================
+    AAPL       246.5800
+    FB         187.8900
+    GOOG       1265.1300
+
+
+**Code**:
+
+Full `source code <https://github.com/ariesunique/30-day-project-challenge/tree/master/stocktracker>`_ in GitHub
 
 ---------------
 What I Learned
