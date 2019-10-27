@@ -43,7 +43,7 @@ LINKS = (('TESOL Portfolio', 'http://aiyanabrookstesol.strikingly.com/'),
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/ariesunique/'),
-          ('linkedin', 'https://www.linkedin.com/'),)
+          ('bitbucket', 'https://bitbucket.org/ariesunique/'))
 
 DEFAULT_PAGINATION = 10
 
