@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Aiyana Brooks - Aiyana</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Thu, 31 Oct 2019 09:20:00 -0400</lastBuildDate><item><title>SPELL Attendance Tracker</title><link>https://aiyanabrooks.com/attendance-tracker.html</link><description>&lt;p&gt;For a while I was teaching English at a community program called SPELL.
+<rss version="2.0"><channel><title>Aiyana Brooks - Aiyana</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Thu, 31 Oct 2019 14:29:00 -0400</lastBuildDate><item><title>Site Word Counter</title><link>https://aiyanabrooks.com/site-word-counter.html</link><description>&lt;p&gt;I followed this tutorial (&lt;a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php"&gt;part 1&lt;/a&gt;
+and &lt;a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_2_BeautifulSoup_NLTK_Gunicorn_PM2_Apache.php"&gt;part 2&lt;/a&gt;)
+and deployed the code to heroku (Application is live &lt;a class="reference external" href="https://wordcount-stage-aunique.herokuapp.com/"&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;This was a fun project because it uses Flask, Beautiful Soup and NLTK. The user enters a url
+and the code fetches the content from that url and returns an alphabetical list of the words
+used on that page, as well as a count for each word. The code uses requests to fetch the content from the url,
+BeautifulSoup to parse the content and remove the html tags, and NLTK to count the words.&lt;/p&gt;
+&lt;p&gt;Unfortunately, I did not upload the code to GitHub or BitBucket before my main computer crashed, but I did manage to deploy it to Heroku.&lt;/p&gt;
+&lt;p&gt;Below are screenshots of the application. As a test, I put in the &lt;a class="reference external" href="pages/about.html"&gt;About page&lt;/a&gt; from this website.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Home screen on the WordCount application&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Wordcount Home screen" src="../images/wordcount-home.png" /&gt;
+&lt;p&gt;&lt;strong&gt;Word frequencies for https://aiyanabrooks.com/pages/about.html&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Wordcount results" src="../images/wordcount-results.png" /&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Thu, 31 Oct 2019 14:29:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-10-31:/site-word-counter.html</guid><category>blog</category><category>projects</category><category>flask</category><category>nltk</category></item><item><title>SPELL Attendance Tracker</title><link>https://aiyanabrooks.com/attendance-tracker.html</link><description>&lt;p&gt;For a while I was teaching English at a community program called SPELL.
 The program required us to turn in paper attendance sheets each week.
 For my first Flask project, I wanted to create an online attendance tool for
 teachers to more easily track and turn in their attendance. I used Bootstrap for

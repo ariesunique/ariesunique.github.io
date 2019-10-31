@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Authors - Aiyana Brooks</title>
+    <title>Site Word Counter - Aiyana Brooks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,23 @@
 
     <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
 
+<link rel="canonical" href="https://aiyanabrooks.com/site-word-counter.html">
 
         <meta name="author" content="Aiyana" />
+        <meta name="keywords" content="projects,flask,nltk" />
+        <meta name="description" content="This is the summary." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Aiyana Brooks" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Aiyana Brooks"/>
-        <meta property="og:url" content="https://aiyanabrooks.com"/>
-        <meta property="og:description" content="Aiyana Brooks"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Site Word Counter"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/site-word-counter.html"/>
+        <meta property="og:description" content="This is the summary."/>
+        <meta property="article:published_time" content="2019-10-31" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="projects" />
+            <meta property="article:tag" content="flask" />
+            <meta property="article:tag" content="nltk" />
+            <meta property="article:author" content="Aiyana" />
 
 
 
@@ -58,7 +66,7 @@ Aiyana Brooks            </a>
                          <li><a href="https://aiyanabrooks.com/pages/projects.html">
                              Projects
                           </a></li>
-                        <li >
+                        <li class="active">
                             <a href="https://aiyanabrooks.com/category/blog.html">Blog</a>
                         </li>
             </ul>
@@ -76,8 +84,62 @@ Aiyana Brooks            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-  <h1>Authors on Aiyana Brooks</h1>
-        <li><a href="https://aiyanabrooks.com/author/aiyana.html">Aiyana</a> (4)</li>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://aiyanabrooks.com/site-word-counter.html"
+                       rel="bookmark"
+                       title="Permalink to Site Word Counter">
+                        Site Word Counter
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2019-10-31T14:29:00-04:00"> Thu 31 October 2019</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
+        /
+	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
+        /
+	<a href="https://aiyanabrooks.com/tag/nltk.html">nltk</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>I followed this tutorial (<a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php">part 1</a>
+and <a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_2_BeautifulSoup_NLTK_Gunicorn_PM2_Apache.php">part 2</a>)
+and deployed the code to heroku (Application is live <a class="reference external" href="https://wordcount-stage-aunique.herokuapp.com/">here</a>).</p>
+<p>This was a fun project because it uses Flask, Beautiful Soup and NLTK. The user enters a url
+and the code fetches the content from that url and returns an alphabetical list of the words
+used on that page, as well as a count for each word. The code uses requests to fetch the content from the url,
+BeautifulSoup to parse the content and remove the html tags, and NLTK to count the words.</p>
+<p>Unfortunately, I did not upload the code to GitHub or BitBucket before my main computer crashed, but I did manage to deploy it to Heroku.</p>
+<p>Below are screenshots of the application. As a test, I put in the <a class="reference external" href="pages/about.html">About page</a> from this website.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>Home screen on the WordCount application</strong></p>
+<img alt="Wordcount Home screen" src="../images/wordcount-home.png" />
+<p><strong>Word frequencies for https://aiyanabrooks.com/pages/about.html</strong></p>
+<img alt="Wordcount results" src="../images/wordcount-results.png" />
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
