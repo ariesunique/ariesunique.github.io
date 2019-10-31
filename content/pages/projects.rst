@@ -19,5 +19,11 @@ This was my first attempt at creating a Flask application. The goal was to creat
 an online attendance tracking tool that could be used by teachers to store and monitor
 student attendance.
 
+|
+
+**Word Counter**
+
+I followed along with a Flask `tutorial <https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php>`_ and created this nifty little web application.
+You can `view screenshots here <../site-word-counter.html>`_, or `see it live here <https://wordcount-stage-aunique.herokuapp.com/>`_.
 
 
