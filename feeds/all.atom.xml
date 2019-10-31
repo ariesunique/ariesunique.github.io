@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2019-04-04T08:21:00-04:00</updated><entry><title>Stock Tracker</title><link href="https://aiyanabrooks.com/stock-tracker.html" rel="alternate"></link><published>2019-04-04T08:21:00-04:00</published><updated>2019-04-04T08:21:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-04-04:/stock-tracker.html</id><summary type="html">&lt;p class="first last"&gt;A CLI tool to display a stock quote for a given stock symbol.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2019-10-31T09:20:00-04:00</updated><entry><title>SPELL Attendance Tracker</title><link href="https://aiyanabrooks.com/attendance-tracker.html" rel="alternate"></link><published>2019-10-31T09:20:00-04:00</published><updated>2019-10-31T09:20:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-10-31:/attendance-tracker.html</id><summary type="html">&lt;p class="first last"&gt;This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;For a while I was teaching English at a community program called SPELL.
+The program required us to turn in paper attendance sheets each week.
+For my first Flask project, I wanted to create an online attendance tool for
+teachers to more easily track and turn in their attendance. I used Bootstrap for
+the UI and mysql for the database. After completing the initial screens,
+I decided to refactor the project and start again (see &lt;a class="reference internal" href="#take-2"&gt;Take 2&lt;/a&gt;). Both versions of the code
+are written in Python 2.7 which has since been deprecated. This code never went live,
+but it was a good learning experience.&lt;/p&gt;
+&lt;div class="section" id="take-1"&gt;
+&lt;h2&gt;Take 1&lt;/h2&gt;
+&lt;p&gt;This code lives in a &lt;a class="reference external" href="https://bitbucket.org/ariesunique/speller/src/master/"&gt;Bitbucket repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;/index - This is the index/ Welcome page&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Index page" src="../images/Spell-index.png" /&gt;
+&lt;p&gt;&lt;strong&gt;/register - Enable users to register&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Register page" src="../images/Spell-register.png" /&gt;
+&lt;p&gt;&lt;strong&gt;/login - Standard Login Page&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Login page" src="../images/Spell-login.png" /&gt;
+&lt;p&gt;&lt;strong&gt;/login - After a new user registers, he is redirected to the login page.&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Login page after redirect" src="../images/Spell-login-redirect.png" /&gt;
+&lt;p&gt;&lt;strong&gt;/dashboard - There was supposed to be more to this screen, but I decided to refactor
+the project and start from scratch.&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Empty Dashboard page" src="../images/Spell-dashboard.png" /&gt;
+&lt;/div&gt;
+&lt;div class="section" id="take-2"&gt;
+&lt;h2&gt;Take 2&lt;/h2&gt;
+&lt;p&gt;This code lives in a BitBucket repository called &lt;a class="reference external" href="https://bitbucket.org/ariesunique/spelldemo/src"&gt;SpellDemo&lt;/a&gt;
+For this second attempt, I used a different Bootstrap theme that was less bright, and I simplified the
+code base. In the first attempt, I had tried to use blueprints and the codebase became confusing. This second trial,
+I decided it was better to start simple, and refactor later, if needed.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/login - Standard Login Page&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Standard Login page" src="../images/spelldemo-login.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/logout redirects back to the Login page with a message to the user that he has successfully logged out&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Login page after redirect from logout" src="../images/spelldemo-logout-redirect.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/dashboard - Admin dashboard&lt;/strong&gt;
+SPELL is a community program that recurs twice each year for 12 weeks each semester.
+The idea behind this screen is that the administrator of the program would set the current
+semester of the program (ie, Winter 2016, Fall 2016), and enter the names of enrolled
+students and assign them to classes.&lt;/p&gt;
+&lt;img alt="Admin Dashboard" src="../images/spelldemo-admin-dashboard.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/attendance - Morning attendance tab&lt;/strong&gt;
+Teachers in SPELL teach two classes - one in the morning and one in the afternoon.
+This attendance page enables teachers to enter attendance for both their classes.
+The page uses javascript and Bootstrap to provide a tab navigation so teacher can easily
+toggle between morning and afternoon attendance for that day. The teacher chooses
+a date first and is shown a list of all the students in his morning and afternoon classes.
+The teacher can use the radio buttons to mark the attendance accordingly, and optionally
+can enter a comment.&lt;/p&gt;
+&lt;img alt="Morning attendance page" src="../images/spelldemo-attendance-morning.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/attendance - Afternoon attendance tab&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Afternoon attendance page" src="../images/spelldemo-attendance-afternoon.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/students - List of students in this teacher's class&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Student list page" src="../images/spelldemo-students-list.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/student/add - Add student&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Add student page" src="../images/spelldemo-students-add.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;/student/edit/{id} - Edit student&lt;/strong&gt;&lt;/p&gt;
+&lt;img alt="Edit student page" src="../images/spelldemo-students-edit.png" /&gt;
+&lt;/div&gt;
+</content><category term="blog"></category><category term="projects"></category><category term="flask"></category></entry><entry><title>Stock Tracker</title><link href="https://aiyanabrooks.com/stock-tracker.html" rel="alternate"></link><published>2019-04-04T08:21:00-04:00</published><updated>2019-04-04T08:21:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-04-04:/stock-tracker.html</id><summary type="html">&lt;p class="first last"&gt;A CLI tool to display a stock quote for a given stock symbol.&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="description"&gt;
 &lt;h2&gt;Description&lt;/h2&gt;
 &lt;p&gt;A simple command line interface to look up the stock quote of a given stock symbol&lt;/p&gt;

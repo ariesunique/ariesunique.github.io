@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>SPELL Attendance Tracker - Aiyana Brooks</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
+
+<link rel="canonical" href="https://aiyanabrooks.com/attendance-tracker.html">
+
+        <meta name="author" content="Aiyana" />
+        <meta name="keywords" content="projects,flask" />
+        <meta name="description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance." />
+
+        <meta property="og:site_name" content="Aiyana Brooks" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="SPELL Attendance Tracker"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/attendance-tracker.html"/>
+        <meta property="og:description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance."/>
+        <meta property="article:published_time" content="2019-10-31" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="projects" />
+            <meta property="article:tag" content="flask" />
+            <meta property="article:author" content="Aiyana" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://aiyanabrooks.com/theme/css/bootstrap.cerulean.min.css" type="text/css"/>
+    <link href="https://aiyanabrooks.com/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://aiyanabrooks.com/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://aiyanabrooks.com/theme/css/style.css" type="text/css"/>
+
+        <link href="https://aiyanabrooks.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Aiyana Brooks ATOM Feed"/>
+
+        <link href="https://aiyanabrooks.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Aiyana Brooks RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://aiyanabrooks.com/" class="navbar-brand">
+Aiyana Brooks            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="https://aiyanabrooks.com/pages/about.html">
+                             About
+                          </a></li>
+                         <li><a href="https://aiyanabrooks.com/pages/projects.html">
+                             Projects
+                          </a></li>
+                        <li class="active">
+                            <a href="https://aiyanabrooks.com/category/blog.html">Blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://aiyanabrooks.com/attendance-tracker.html"
+                       rel="bookmark"
+                       title="Permalink to SPELL Attendance Tracker">
+                        SPELL Attendance Tracker
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2019-10-31T09:20:00-04:00"> Thu 31 October 2019</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
+        /
+	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>For a while I was teaching English at a community program called SPELL.
+The program required us to turn in paper attendance sheets each week.
+For my first Flask project, I wanted to create an online attendance tool for
+teachers to more easily track and turn in their attendance. I used Bootstrap for
+the UI and mysql for the database. After completing the initial screens,
+I decided to refactor the project and start again (see <a class="reference internal" href="#take-2">Take 2</a>). Both versions of the code
+are written in Python 2.7 which has since been deprecated. This code never went live,
+but it was a good learning experience.</p>
+<div class="section" id="take-1">
+<h2>Take 1</h2>
+<p>This code lives in a <a class="reference external" href="https://bitbucket.org/ariesunique/speller/src/master/">Bitbucket repository</a></p>
+<p><strong>/index - This is the index/ Welcome page</strong></p>
+<img alt="Index page" src="../images/Spell-index.png" />
+<p><strong>/register - Enable users to register</strong></p>
+<img alt="Register page" src="../images/Spell-register.png" />
+<p><strong>/login - Standard Login Page</strong></p>
+<img alt="Login page" src="../images/Spell-login.png" />
+<p><strong>/login - After a new user registers, he is redirected to the login page.</strong></p>
+<img alt="Login page after redirect" src="../images/Spell-login-redirect.png" />
+<p><strong>/dashboard - There was supposed to be more to this screen, but I decided to refactor
+the project and start from scratch.</strong></p>
+<img alt="Empty Dashboard page" src="../images/Spell-dashboard.png" />
+</div>
+<div class="section" id="take-2">
+<h2>Take 2</h2>
+<p>This code lives in a BitBucket repository called <a class="reference external" href="https://bitbucket.org/ariesunique/spelldemo/src">SpellDemo</a>
+For this second attempt, I used a different Bootstrap theme that was less bright, and I simplified the
+code base. In the first attempt, I had tried to use blueprints and the codebase became confusing. This second trial,
+I decided it was better to start simple, and refactor later, if needed.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>/login - Standard Login Page</strong></p>
+<img alt="Standard Login page" src="../images/spelldemo-login.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>/logout redirects back to the Login page with a message to the user that he has successfully logged out</strong></p>
+<img alt="Login page after redirect from logout" src="../images/spelldemo-logout-redirect.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>/dashboard - Admin dashboard</strong>
+SPELL is a community program that recurs twice each year for 12 weeks each semester.
+The idea behind this screen is that the administrator of the program would set the current
+semester of the program (ie, Winter 2016, Fall 2016), and enter the names of enrolled
+students and assign them to classes.</p>
+<img alt="Admin Dashboard" src="../images/spelldemo-admin-dashboard.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>/attendance - Morning attendance tab</strong>
+Teachers in SPELL teach two classes - one in the morning and one in the afternoon.
+This attendance page enables teachers to enter attendance for both their classes.
+The page uses javascript and Bootstrap to provide a tab navigation so teacher can easily
+toggle between morning and afternoon attendance for that day. The teacher chooses
+a date first and is shown a list of all the students in his morning and afternoon classes.
+The teacher can use the radio buttons to mark the attendance accordingly, and optionally
+can enter a comment.</p>
+<img alt="Morning attendance page" src="../images/spelldemo-attendance-morning.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>/attendance - Afternoon attendance tab</strong></p>
+<img alt="Afternoon attendance page" src="../images/spelldemo-attendance-afternoon.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>/students - List of students in this teacher's class</strong></p>
+<img alt="Student list page" src="../images/spelldemo-students-list.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>/student/add - Add student</strong></p>
+<img alt="Add student page" src="../images/spelldemo-students-add.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>/student/edit/{id} - Edit student</strong></p>
+<img alt="Edit student page" src="../images/spelldemo-students-edit.png" />
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="https://aiyanabrooks.com/images/profile.png"/>
+        </p>
+    <p>
+      <strong>About Aiyana</strong><br/>
+        My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student.
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/ariesunique/"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://bitbucket.org/ariesunique/"><i class="fa fa-bitbucket-square fa-lg"></i> bitbucket</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://aiyanabrookstesol.strikingly.com/" target="_blank">TESOL Portfolio</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2019 Aiyana
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://aiyanabrooks.com/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://aiyanabrooks.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://aiyanabrooks.com/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>
