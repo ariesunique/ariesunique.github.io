@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Thu, 31 Oct 2019 14:29:00 -0400</lastBuildDate><item><title>Site Word Counter</title><link>https://aiyanabrooks.com/site-word-counter.html</link><description>&lt;p&gt;I followed this tutorial (&lt;a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php"&gt;part 1&lt;/a&gt;
+<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Fri, 01 Nov 2019 22:45:00 -0400</lastBuildDate><item><title>Corpus Tool</title><link>https://aiyanabrooks.com/corpus-tool.html</link><description>&lt;div class="section" id="description"&gt;
+&lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;Using this tool, students and faculty (with access) would upload student papers to the database; then researchers could download
+papers meeting certain criteria in order to create a corpus. (A corpus is a collection of texts that have some commonality; a corpus
+is usually used to demonstrate some aspect of language.) The papers uploaded would be passed through a de-identification process so that any
+personally identifiable information (such as a student's Name) would be removed. In addition, each paper would be passed through a tagging
+process, so that certain characteristics about the writer (e.g. nationality, first language, age range) are associated with the paper.
+This would enable a researcher to collect papers meeting specific criteria (e.g. All papers where the author's first language was Russian),
+and these papers could then be analyzed.&lt;/p&gt;
+&lt;p&gt;The code described here is a very early (unfinished) prototype.&lt;/p&gt;
+&lt;p&gt;This code lives in a &lt;a class="reference external" href="https://bitbucket.org/ariesunique/baruchcorpus/src/master/"&gt;BitBucket repository&lt;/a&gt; and is
+live on the &lt;a class="reference external" href="https://corpus-aunique.herokuapp.com/"&gt;Heroku platform&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-it-works"&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;p&gt;To access the database, users will need a login.&lt;/p&gt;
+&lt;img alt="Corpus login page" src="../images/corpus-login.png" /&gt;
+&lt;p&gt;There are several levels of access.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Students can upload their papers to the corpus, but cannot query the corpus (To login use tren:Welcome1).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="Student access" src="../images/corpus-limited-access-student.png" /&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Teachers can query the corpus, but cannot upload papers (To login use teacher:teacher).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="Teacher access" src="../images/corpus-limited-access.png" /&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Admins can upload papers and perform queries (To login use admin:admin).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;There are two options for adding papers to the corpus. You can add the full text directly into the text field, or you can upload a docx.&lt;/p&gt;
+&lt;p&gt;When a student uploads a paper, the tool will search the paper for any references to that student's name and will replace these with {{Name}}.
+This is a very primitive, first attempt to de-identify the student data. If an admin uploads a paper, then the admin must first select
+the name of the student who authored the paper so that the tool knows how to deidentify the student.
+The tool will also count the number of words.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The proposed workflow for this tool would have been as follows:&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Students upload their papers to the corpus.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img alt="Student upload page" src="../images/corpus-student-upload.png" /&gt;
+&lt;p&gt;Before a student can use the tool, a login would need to be created for them.
+Additionally, the user would need to be associated with the appropriate demographic data, which could potentially be obtained
+from the registration office, and bulk-loaded into the system using a sql script.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;Researchers/Teachers can query the corpus using demographic data (e.g. find all papers written by first-language Chinese speakers)
+or using words and phrases (e.g. find all papers containing the phrase, &amp;quot;for your consideration&amp;quot;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img alt="Student upload page" src="../images/corpus-list-with-highlighting.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;The researcher can download the text versions of selected papers as a zip file and use a more advanced tool,
+such as &lt;a class="reference external" href="https://www.laurenceanthony.net/software/antconc/"&gt;AntConc&lt;/a&gt;, to do analysis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img alt="Student upload page" src="../images/corpus-download.png" /&gt;
+&lt;p&gt;This is a very early prototype so it does not have all of the functions that the production-ready version would have.
+(For example, the query feature is not implemented. Also, we would need to decide exactly what demographic data
+we need to collect - country, language, etc. This tool uses a very small set of characteristics.)&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-i-learned"&gt;
+&lt;h2&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;This was a fun project because it was my first time deploying my own project to Heroku. I also had full control over every aspect
+of the project, so I had to design the database schema, the UI, configuration options, etc.&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Fri, 01 Nov 2019 22:45:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2019-11-01:/corpus-tool.html</guid><category>blog</category><category>flask</category></item><item><title>Site Word Counter</title><link>https://aiyanabrooks.com/site-word-counter.html</link><description>&lt;p&gt;I followed this tutorial (&lt;a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php"&gt;part 1&lt;/a&gt;
 and &lt;a class="reference external" href="https://www.bogotobogo.com/python/Flask/Python_Flask_App_2_BeautifulSoup_NLTK_Gunicorn_PM2_Apache.php"&gt;part 2&lt;/a&gt;)
 and deployed the code to heroku (Application is live &lt;a class="reference external" href="https://wordcount-stage-aunique.herokuapp.com/"&gt;here&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;This was a fun project because it uses Flask, Beautiful Soup and NLTK. The user enters a url
@@ -82,6 +165,7 @@ can enter a comment.&lt;/p&gt;
 &lt;img alt="Morning attendance page" src="../images/spelldemo-attendance-morning.png" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;/attendance - Afternoon attendance tab&lt;/strong&gt;&lt;/p&gt;
 &lt;img alt="Afternoon attendance page" src="../images/spelldemo-attendance-afternoon.png" /&gt;
@@ -93,10 +177,12 @@ can enter a comment.&lt;/p&gt;
 &lt;img alt="Student list page" src="../images/spelldemo-students-list.png" /&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;/student/add - Add student&lt;/strong&gt;&lt;/p&gt;
 &lt;img alt="Add student page" src="../images/spelldemo-students-add.png" /&gt;
 &lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;/student/edit/{id} - Edit student&lt;/strong&gt;&lt;/p&gt;

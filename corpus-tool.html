@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>SPELL Attendance Tracker - Aiyana Brooks</title>
+    <title>Corpus Tool - Aiyana Brooks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,20 +10,19 @@
 
     <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
 
-<link rel="canonical" href="https://aiyanabrooks.com/attendance-tracker.html">
+<link rel="canonical" href="https://aiyanabrooks.com/corpus-tool.html">
 
         <meta name="author" content="Aiyana" />
-        <meta name="keywords" content="projects,flask" />
-        <meta name="description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance." />
+        <meta name="keywords" content="flask" />
+        <meta name="description" content="This is a small web application designed to help researchers create a corpus of student writing." />
 
         <meta property="og:site_name" content="Aiyana Brooks" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="SPELL Attendance Tracker"/>
-        <meta property="og:url" content="https://aiyanabrooks.com/attendance-tracker.html"/>
-        <meta property="og:description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance."/>
-        <meta property="article:published_time" content="2019-10-31" />
+        <meta property="og:title" content="Corpus Tool"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/corpus-tool.html"/>
+        <meta property="og:description" content="This is a small web application designed to help researchers create a corpus of student writing."/>
+        <meta property="article:published_time" content="2019-11-01" />
             <meta property="article:section" content="blog" />
-            <meta property="article:tag" content="projects" />
             <meta property="article:tag" content="flask" />
             <meta property="article:author" content="Aiyana" />
 
@@ -87,10 +86,10 @@ Aiyana Brooks            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://aiyanabrooks.com/attendance-tracker.html"
+                    <a href="https://aiyanabrooks.com/corpus-tool.html"
                        rel="bookmark"
-                       title="Permalink to SPELL Attendance Tracker">
-                        SPELL Attendance Tracker
+                       title="Permalink to Corpus Tool">
+                        Corpus Tool
                     </a>
                 </h1>
             </header>
@@ -100,7 +99,7 @@ Aiyana Brooks            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-10-31T09:20:00-04:00"> Thu 31 October 2019</time>
+        <i class="fa fa-calendar"></i><time datetime="2019-11-01T22:45:00-04:00"> Fri 01 November 2019</time>
     </span>
 
 
@@ -108,100 +107,92 @@ Aiyana Brooks            </a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
-        /
 	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>For a while I was teaching English at a community program called SPELL.
-The program required us to turn in paper attendance sheets each week.
-For my first Flask project, I wanted to create an online attendance tool for
-teachers to more easily track and turn in their attendance. I used Bootstrap for
-the UI and mysql for the database. After completing the initial screens,
-I decided to refactor the project and start again (see <a class="reference internal" href="#take-2">Take 2</a>). Both versions of the code
-are written in Python 2.7 which has since been deprecated. This code never went live,
-but it was a good learning experience.</p>
-<div class="section" id="take-1">
-<h2>Take 1</h2>
-<p>This code lives in a <a class="reference external" href="https://bitbucket.org/ariesunique/speller/src/master/">Bitbucket repository</a></p>
-<p><strong>/index - This is the index/ Welcome page</strong></p>
-<img alt="Index page" src="../images/Spell-index.png" />
-<p><strong>/register - Enable users to register</strong></p>
-<img alt="Register page" src="../images/Spell-register.png" />
-<p><strong>/login - Standard Login Page</strong></p>
-<img alt="Login page" src="../images/Spell-login.png" />
-<p><strong>/login - After a new user registers, he is redirected to the login page.</strong></p>
-<img alt="Login page after redirect" src="../images/Spell-login-redirect.png" />
-<p><strong>/dashboard - There was supposed to be more to this screen, but I decided to refactor
-the project and start from scratch.</strong></p>
-<img alt="Empty Dashboard page" src="../images/Spell-dashboard.png" />
+                <div class="section" id="description">
+<h2>Description</h2>
+<p>Using this tool, students and faculty (with access) would upload student papers to the database; then researchers could download
+papers meeting certain criteria in order to create a corpus. (A corpus is a collection of texts that have some commonality; a corpus
+is usually used to demonstrate some aspect of language.) The papers uploaded would be passed through a de-identification process so that any
+personally identifiable information (such as a student's Name) would be removed. In addition, each paper would be passed through a tagging
+process, so that certain characteristics about the writer (e.g. nationality, first language, age range) are associated with the paper.
+This would enable a researcher to collect papers meeting specific criteria (e.g. All papers where the author's first language was Russian),
+and these papers could then be analyzed.</p>
+<p>The code described here is a very early (unfinished) prototype.</p>
+<p>This code lives in a <a class="reference external" href="https://bitbucket.org/ariesunique/baruchcorpus/src/master/">BitBucket repository</a> and is
+live on the <a class="reference external" href="https://corpus-aunique.herokuapp.com/">Heroku platform</a>.</p>
 </div>
-<div class="section" id="take-2">
-<h2>Take 2</h2>
-<p>This code lives in a BitBucket repository called <a class="reference external" href="https://bitbucket.org/ariesunique/spelldemo/src">SpellDemo</a>
-For this second attempt, I used a different Bootstrap theme that was less bright, and I simplified the
-code base. In the first attempt, I had tried to use blueprints and the codebase became confusing. This second trial,
-I decided it was better to start simple, and refactor later, if needed.</p>
+<div class="section" id="how-it-works">
+<h2>How it works</h2>
+<p>To access the database, users will need a login.</p>
+<img alt="Corpus login page" src="../images/corpus-login.png" />
+<p>There are several levels of access.</p>
+<ul class="simple">
+<li>Students can upload their papers to the corpus, but cannot query the corpus (To login use tren:Welcome1).</li>
+</ul>
+<img alt="Student access" src="../images/corpus-limited-access-student.png" />
+<ul class="simple">
+<li>Teachers can query the corpus, but cannot upload papers (To login use teacher:teacher).</li>
+</ul>
+<img alt="Teacher access" src="../images/corpus-limited-access.png" />
+<ul class="simple">
+<li>Admins can upload papers and perform queries (To login use admin:admin).</li>
+</ul>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<p><strong>/login - Standard Login Page</strong></p>
-<img alt="Standard Login page" src="../images/spelldemo-login.png" />
+<p>There are two options for adding papers to the corpus. You can add the full text directly into the text field, or you can upload a docx.</p>
+<p>When a student uploads a paper, the tool will search the paper for any references to that student's name and will replace these with {{Name}}.
+This is a very primitive, first attempt to de-identify the student data. If an admin uploads a paper, then the admin must first select
+the name of the student who authored the paper so that the tool knows how to deidentify the student.
+The tool will also count the number of words.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The proposed workflow for this tool would have been as follows:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple">
+<li>Students upload their papers to the corpus.</li>
+</ol>
+<img alt="Student upload page" src="../images/corpus-student-upload.png" />
+<p>Before a student can use the tool, a login would need to be created for them.
+Additionally, the user would need to be associated with the appropriate demographic data, which could potentially be obtained
+from the registration office, and bulk-loaded into the system using a sql script.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<p><strong>/logout redirects back to the Login page with a message to the user that he has successfully logged out</strong></p>
-<img alt="Login page after redirect from logout" src="../images/spelldemo-logout-redirect.png" />
+<ol class="arabic simple" start="2">
+<li>Researchers/Teachers can query the corpus using demographic data (e.g. find all papers written by first-language Chinese speakers)
+or using words and phrases (e.g. find all papers containing the phrase, &quot;for your consideration&quot;).</li>
+</ol>
+<img alt="Student upload page" src="../images/corpus-list-with-highlighting.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<p><strong>/dashboard - Admin dashboard</strong>
-SPELL is a community program that recurs twice each year for 12 weeks each semester.
-The idea behind this screen is that the administrator of the program would set the current
-semester of the program (ie, Winter 2016, Fall 2016), and enter the names of enrolled
-students and assign them to classes.</p>
-<img alt="Admin Dashboard" src="../images/spelldemo-admin-dashboard.png" />
+<ol class="arabic simple" start="3">
+<li>The researcher can download the text versions of selected papers as a zip file and use a more advanced tool,
+such as <a class="reference external" href="https://www.laurenceanthony.net/software/antconc/">AntConc</a>, to do analysis.</li>
+</ol>
+<img alt="Student upload page" src="../images/corpus-download.png" />
+<p>This is a very early prototype so it does not have all of the functions that the production-ready version would have.
+(For example, the query feature is not implemented. Also, we would need to decide exactly what demographic data
+we need to collect - country, language, etc. This tool uses a very small set of characteristics.)</p>
 <div class="line-block">
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
-<p><strong>/attendance - Morning attendance tab</strong>
-Teachers in SPELL teach two classes - one in the morning and one in the afternoon.
-This attendance page enables teachers to enter attendance for both their classes.
-The page uses javascript and Bootstrap to provide a tab navigation so teacher can easily
-toggle between morning and afternoon attendance for that day. The teacher chooses
-a date first and is shown a list of all the students in his morning and afternoon classes.
-The teacher can use the radio buttons to mark the attendance accordingly, and optionally
-can enter a comment.</p>
-<img alt="Morning attendance page" src="../images/spelldemo-attendance-morning.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
 </div>
-<p><strong>/attendance - Afternoon attendance tab</strong></p>
-<img alt="Afternoon attendance page" src="../images/spelldemo-attendance-afternoon.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/students - List of students in this teacher's class</strong></p>
-<img alt="Student list page" src="../images/spelldemo-students-list.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/student/add - Add student</strong></p>
-<img alt="Add student page" src="../images/spelldemo-students-add.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/student/edit/{id} - Edit student</strong></p>
-<img alt="Edit student page" src="../images/spelldemo-students-edit.png" />
+<div class="section" id="what-i-learned">
+<h2>What I Learned</h2>
+<p>This was a fun project because it was my first time deploying my own project to Heroku. I also had full control over every aspect
+of the project, so I had to design the database schema, the UI, configuration options, etc.</p>
 </div>
 
             </div>
