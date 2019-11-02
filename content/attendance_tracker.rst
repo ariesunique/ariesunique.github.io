@@ -100,6 +100,7 @@ can enter a comment.
    :alt: Morning attendance page
 
 |
+|
 
 **/attendance - Afternoon attendance tab**
 
@@ -115,12 +116,14 @@ can enter a comment.
    :alt: Student list page
 
 |
+|
 
 **/student/add - Add student**
 
 .. image:: ../images/spelldemo-students-add.png
    :alt: Add student page
 
+|
 |
 
 **/student/edit/{id} - Edit student**

@@ -6,7 +6,7 @@ Site Word Counter
 :tags: projects, flask, nltk
 :category: blog
 :slug: site-word-counter
-:summary: This is the summary.
+:summary: This is a Flask application that will take a url as input and display a word frequency list.
 
 I followed this tutorial (`part 1 <https://www.bogotobogo.com/python/Flask/Python_Flask_App_1_Word_Count_Postgres_SQLAlchemy.php>`_
 and `part 2 <https://www.bogotobogo.com/python/Flask/Python_Flask_App_2_BeautifulSoup_NLTK_Gunicorn_PM2_Apache.php>`_)

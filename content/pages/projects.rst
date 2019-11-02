@@ -8,7 +8,8 @@ Some of these were more successful than others.
 
 **Corpus Tool**
 
-`Corpus Collection Tool <https://corpus-aunique.herokuapp.com>`_
+Corpus Collection Tool `description <../corpus-tool.html>`_ and `live demo <https://corpus-aunique.herokuapp.com>`_ -
+This was a prototype to enable faculty to create a corpus of student writing.
 
 |
 
