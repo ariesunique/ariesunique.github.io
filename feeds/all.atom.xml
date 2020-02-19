@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2019-11-01T22:45:00-04:00</updated><entry><title>Corpus Tool</title><link href="https://aiyanabrooks.com/corpus-tool.html" rel="alternate"></link><published>2019-11-01T22:45:00-04:00</published><updated>2019-11-01T22:45:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-11-01:/corpus-tool.html</id><summary type="html">&lt;p class="first last"&gt;This is a small web application designed to help researchers create a corpus of student writing.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2020-02-17T18:56:00-05:00</updated><entry><title>Recurse Center</title><link href="https://aiyanabrooks.com/recurse-center.html" rel="alternate"></link><published>2020-02-17T18:56:00-05:00</published><updated>2020-02-17T18:56:00-05:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2020-02-17:/recurse-center.html</id><summary type="html">&lt;p class="first last"&gt;For the past 6 weeks, I have been part of an amazing program called the Recurse Center. In this post, I share a little bit about what the Recurse Center is, how it works, and why it is a wonderful opportunity for anyone who is excited about technology.&lt;/p&gt;
+</summary><content type="html">&lt;div class="section" id="what-is-the-recurse-center"&gt;
+&lt;h2&gt;WHAT IS THE RECURSE CENTER?&lt;/h2&gt;
+&lt;p&gt;The best way to describe the Recurse Center is that it is a self-directed retreat for people interested in becoming better programmers.&lt;/p&gt;
+&lt;p&gt;But that description only scratches the surface of what the Recurse Center is about.&lt;/p&gt;
+&lt;p&gt;Before continuing, it is probably easier to describe what Recurse is NOT:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;It is NOT a school (there are no teachers, classes, tests, midterms, assignments, deadlines, etc)&lt;/li&gt;
+&lt;li&gt;It is NOT a bootcamp&lt;/li&gt;
+&lt;li&gt;It is NOT an internship or apprenticeship&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the Recurse Center, people decide for themselves how they want to spend their time. Usually this means focusing on some activity that will enhance one's skillset or knowledge of some aspect of a technology-related domain. Everyone brings their own laptop; Recurse provides a conducive working/learning environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="why-do-people-attend-the-recurse-center"&gt;
+&lt;h2&gt;WHY DO PEOPLE ATTEND THE RECURSE CENTER?&lt;/h2&gt;
+&lt;p&gt;A valid question: Why would someone attend the Recurse Center as opposed to doing self-study in a library?&lt;/p&gt;
+&lt;p&gt;The answer: the opportunity to be around other individuals who are also excited about learning!&lt;/p&gt;
+&lt;p&gt;Learning does not happen in a vacuum. Learning is a by-product of interactions, experiments, observations, conversations, etc.&lt;/p&gt;
+&lt;p&gt;Being around other people is important for the following reasons:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;There is always someone available to whom you can ask questions or discuss ideas&lt;/li&gt;
+&lt;li&gt;You get exposure to a wide range of topics&lt;/li&gt;
+&lt;li&gt;You can share your knowledge / expertise with someone else (the best way to test whether or not you truly understand something is to teach it)&lt;/li&gt;
+&lt;li&gt;You have the opportunity to work with other people on their projects or your own (pair programming is hugely popular at Recurse)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content><category term="blog"></category><category term="recurse"></category></entry><entry><title>Corpus Tool</title><link href="https://aiyanabrooks.com/corpus-tool.html" rel="alternate"></link><published>2019-11-01T22:45:00-04:00</published><updated>2019-11-01T22:45:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-11-01:/corpus-tool.html</id><summary type="html">&lt;p class="first last"&gt;This is a small web application designed to help researchers create a corpus of student writing.&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="description"&gt;
 &lt;h2&gt;Description&lt;/h2&gt;
 &lt;p&gt;Using this tool, students and faculty (with access) would upload student papers to the database; then researchers could download

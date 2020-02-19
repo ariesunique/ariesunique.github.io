@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Stock Tracker - Aiyana Brooks</title>
+    <title>recurse - Aiyana Brooks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,21 +10,16 @@
 
     <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
 
-<link rel="canonical" href="https://aiyanabrooks.com/stock-tracker.html">
 
-        <meta name="author" content="Aiyana" />
-        <meta name="keywords" content="30-day-project-challenge" />
-        <meta name="description" content="A CLI tool to display a stock quote for a given stock symbol." />
+    <meta name="author" content="Aiyana" />
+    <meta name="keywords" content="recurse" />
 
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Aiyana Brooks" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Stock Tracker"/>
-        <meta property="og:url" content="https://aiyanabrooks.com/stock-tracker.html"/>
-        <meta property="og:description" content="A CLI tool to display a stock quote for a given stock symbol."/>
-        <meta property="article:published_time" content="2019-04-04" />
-            <meta property="article:section" content="blog" />
-            <meta property="article:tag" content="30-day-project-challenge" />
-            <meta property="article:author" content="Aiyana" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Aiyana Brooks"/>
+        <meta property="og:url" content="https://aiyanabrooks.com"/>
+        <meta property="og:description" content="Aiyana Brooks"/>
 
 
 
@@ -64,7 +59,7 @@ Aiyana Brooks            </a>
                          <li><a href="https://aiyanabrooks.com/pages/projects.html">
                              Projects
                           </a></li>
-                        <li class="active">
+                        <li >
                             <a href="https://aiyanabrooks.com/category/blog.html">Blog</a>
                         </li>
             </ul>
@@ -82,87 +77,14 @@ Aiyana Brooks            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="https://aiyanabrooks.com/stock-tracker.html"
-                       rel="bookmark"
-                       title="Permalink to Stock Tracker">
-                        Stock Tracker
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-04-04T08:21:00-04:00"> Thu 04 April 2019</time>
-    </span>
+            <article>
+                <h2><a href="https://aiyanabrooks.com/recurse-center.html">Recurse Center</a></h2>
+                <div class="summary"><p class="first last">For the past 6 weeks, I have been part of an amazing program called the Recurse Center. In this post, I share a little bit about what the Recurse Center is, how it works, and why it is a wonderful opportunity for anyone who is excited about technology.</p>
 
-
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://aiyanabrooks.com/tag/30-day-project-challenge.html">30-day-project-challenge</a>
-    
-</footer><!-- /.post-info -->                    </div>
+                    <a class="btn btn-default btn-xs" href="https://aiyanabrooks.com/recurse-center.html">more ...</a>
                 </div>
-                <div class="section" id="description">
-<h2>Description</h2>
-<p>A simple command line interface to look up the stock quote of a given stock symbol</p>
-<p><strong>Example Usage</strong>:</p>
-<blockquote>
-<div class="highlight"><pre><span></span>&gt;&gt; stocktracker GOOG
-
-Here are the stock prices on <span class="m">2019</span>-10-27:
-
-Stock      <span class="nv">Quote</span>
-<span class="o">=========================</span>
-GOOG       <span class="m">1265</span>.1300
-
-&gt;&gt; stocktracker GOOG AAPL FB
-
-Here are the stock prices on <span class="m">2019</span>-10-27:
-
-Stock      <span class="nv">Quote</span>
-<span class="o">=========================</span>
-GOOG       <span class="m">1265</span>.1300
-AAPL       <span class="m">246</span>.5800
-FB         <span class="m">187</span>.8900
-
-&gt;&gt; stocktracker -a GOOG AAPL FB
-
-Here are the stock prices on <span class="m">2019</span>-10-27:
-
-Stock      <span class="nv">Quote</span>
-<span class="o">=========================</span>
-AAPL       <span class="m">246</span>.5800
-FB         <span class="m">187</span>.8900
-GOOG       <span class="m">1265</span>.1300
-</pre></div>
-</blockquote>
-<p><strong>Code</strong>:</p>
-<p>Full <a class="reference external" href="https://github.com/ariesunique/30-day-project-challenge/tree/master/stocktracker">source code</a> in GitHub</p>
-</div>
-<div class="section" id="what-i-learned">
-<h2>What I Learned</h2>
-<p>I only worked on this for about 5 consecutive days in short bursts (but this could easily have been done in an hour or two on a single day). I chose this project because I like command-line interfaces and I wanted to work more with the Click library.</p>
-<p>The first step was to figure out how I would get the stock quotes. I found a nice site with a free API for this purpose - alphavantage. I signed up for a free API key and added this to my config file. I’m using configparser to read the config file. To make this into a true CLI, I added a setup.py file (so the code can be called with a simple command instead of having to type the “python” command to run this).</p>
-</div>
-<div class="section" id="assessment">
-<h2>Assessment</h2>
-<p>I learned more about Click and ConfigParser, and how to create a setup.py file.
-There is a lot more that could be added to make this more robust, but it works well enough as a simple CLI proof-of-concept. This was a fun little project and I plan to use Click again for future CLI tools.</p>
-</div>
-
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
