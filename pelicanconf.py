@@ -26,6 +26,13 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 DISPLAY_PAGES_ON_MENU = True
 
+# this will show date on the category page
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
+
+SIDEBAR_ON_LEFT = True
+
+DOCUTIL_CSS = True
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'

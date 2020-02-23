@@ -1,6 +1,6 @@
-==============
+###################
 Recurse Center
-==============
+###################
 
 :date: 2020-02-17 18:56
 :tags: recurse
@@ -8,36 +8,65 @@ Recurse Center
 :slug: recurse-center
 :summary: For the past 6 weeks, I have been part of an amazing program called the Recurse Center. In this post, I share a little bit about what the Recurse Center is, how it works, and why it is a wonderful opportunity for anyone who is excited about technology.
 
- 
+.. role:: text-primary
+.. role:: text-warning
+.. role:: lead
+.. role:: mycard
 
----------------------------
+
+
+
+
+*******************************
 WHAT IS THE RECURSE CENTER?
----------------------------
-The best way to describe the Recurse Center is that it is a self-directed retreat for people interested in becoming better programmers.
+*******************************
 
-But that description only scratches the surface of what the Recurse Center is about.
+- It is *NOT* a school 
+- It is *NOT* a bootcamp
+- It is *NOT* an internship or apprenticeship
+- There are no teachers, classes, tests, midterms, assignments, or deadlines 
+- There are no bosses, supervisors, managers, evaluations, or performance reviews
 
-Before continuing, it is probably easier to describe what Recurse is NOT:
+:lead:`"The Recurse Center is a self-directed, community-driven educational retreat for programmers in New York City."`
+`The Recurse Center <https://www.recurse.com/>`_
 
-- It is NOT a school (there are no teachers, classes, tests, midterms, assignments, deadlines, etc)
-- It is NOT a bootcamp
-- It is NOT an internship or apprenticeship
+|
 
-At the Recurse Center, people decide for themselves how they want to spend their time. Usually this means focusing on some activity that will enhance one's skillset or knowledge of some aspect of a technology-related domain. Everyone brings their own laptop; Recurse provides a conducive working/learning environment.
+:text-warning:`Let's break that definition down a bit`
+=========================================================
 
------------------------------------------
-WHY DO PEOPLE ATTEND THE RECURSE CENTER?
------------------------------------------
-A valid question: Why would someone attend the Recurse Center as opposed to doing self-study in a library?
+**self-directed**
+------------------
 
-The answer: the opportunity to be around other individuals who are also excited about learning!
+:mycard:`At the Recurse Center, people decide for themselves how they want to spend their time. 
+Attendees (called Recursers) choose *what* to work on, *when* to work, and for *how long*. 
+Recursers decide *for themselves* when a project has reached completion. 
+Recrusers decide when their *personal objectives* have been met.` 
 
-Learning does not happen in a vacuum. Learning is a by-product of interactions, experiments, observations, conversations, etc.
+**community-driven**
+----------------------
 
-Being around other people is important for the following reasons:
+:mycard:`All of the activites that occur at the Recurse Center (RC) are initiated, coordinated, and facilitated by attendees of the retreat. Any recurser is welcome to create a new event for the community.` 
 
-- There is always someone available to whom you can ask questions or discuss ideas
-- You get exposure to a wide range of topics
-- You can share your knowledge / expertise with someone else (the best way to test whether or not you truly understand something is to teach it)
-- You have the opportunity to work with other people on their projects or your own (pair programming is hugely popular at Recurse)
 
+**educational-retreat**
+-------------------------
+
+:mycard:`Everyone at Recurse is there because they want to learn. Recursers set their own syllabus and milestones. They can choose to work with others or to work independently.`
+
+|
+
+*********************************************
+WHY ATTEND THE RECURSE CENTER?
+*********************************************
+
+Recursers attend for various reasons. 
+
+- Unlike a bootcamp, school, internship, or other structured program, Recurse gives attendess to freedom to pursue their own interests
+- Some Recursers attend to work on a specific project
+- Some Recursers attend to get inspired for an idea for their next project
+- Many recursers look forward to finding other developers excited about technology *[x]*
+
+|
+
+:lead:`I attended the Recurse Center because I wanted to be around other people excited about technology, I wanted to learn more about web development and data analystics using python, and I wanted to get back into the habit of coding daily.`
