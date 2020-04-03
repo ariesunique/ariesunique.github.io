@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2020-02-17T18:56:00-05:00</updated><entry><title>Recurse Center</title><link href="https://aiyanabrooks.com/recurse-center.html" rel="alternate"></link><published>2020-02-17T18:56:00-05:00</published><updated>2020-02-17T18:56:00-05:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2020-02-17:/recurse-center.html</id><summary type="html">&lt;p class="first last"&gt;For the past 6 weeks, I have been part of an amazing program called the Recurse Center. In this post, I share a little bit about what the Recurse Center is, how it works, and why it is a wonderful opportunity for anyone who is excited about technology.&lt;/p&gt;
-</summary><content type="html">&lt;div class="section" id="what-is-the-recurse-center"&gt;
+</summary><content type="html">&lt;p&gt;&lt;span class="lead"&gt;In January, I took a step toward reinvigorating my journey as a developer by joining The Recurse Center.&lt;/span&gt;&lt;/p&gt;
+&lt;div class="section" id="what-is-the-recurse-center"&gt;
 &lt;h2&gt;WHAT IS THE RECURSE CENTER?&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; a school&lt;/li&gt;
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; a bootcamp&lt;/li&gt;
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; an internship or apprenticeship&lt;/li&gt;
-&lt;li&gt;There are no teachers, classes, tests, midterms, assignments, or deadlines&lt;/li&gt;
+&lt;li&gt;There are no teachers, classes, tests, midterms, assignments, or deadlines &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;There are no bosses, supervisors, managers, evaluations, or performance reviews&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class="lead"&gt;&amp;quot;The Recurse Center is a self-directed, community-driven educational retreat for programmers in New York City.&amp;quot;&lt;/span&gt;
@@ -18,18 +19,18 @@
 &lt;h3&gt;&lt;span class="text-warning"&gt;Let's break that definition down a bit&lt;/span&gt;&lt;/h3&gt;
 &lt;div class="section" id="self-directed"&gt;
 &lt;h4&gt;&lt;strong&gt;self-directed&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;span class="mycard"&gt;At the Recurse Center, people decide for themselves how they want to spend their time.
-Attendees (called Recursers) choose *what* to work on, *when* to work, and for *how long*.
-Recursers decide *for themselves* when a project has reached completion.
-Recrusers decide when their *personal objectives* have been met.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;At the Recurse Center, people decide for themselves how they want to spend their time.
+Attendees (called Recursers) choose &lt;em&gt;what&lt;/em&gt; to work on, &lt;em&gt;when&lt;/em&gt; to work, and for &lt;em&gt;how long&lt;/em&gt;.
+Recursers decide &lt;em&gt;for themselves&lt;/em&gt; when a project has reached completion.
+Recrusers decide when their &lt;em&gt;personal objectives&lt;/em&gt; have been met.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="community-driven"&gt;
 &lt;h4&gt;&lt;strong&gt;community-driven&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;span class="mycard"&gt;All of the activites that occur at the Recurse Center (RC) are initiated, coordinated, and facilitated by attendees of the retreat. Any recurser is welcome to create a new event for the community.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;All of the activites that occur at the Recurse Center (RC) are initiated, coordinated, and facilitated by attendees of the retreat. Any recurser is welcome to create a new event for the community.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="educational-retreat"&gt;
 &lt;h4&gt;&lt;strong&gt;educational-retreat&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;span class="mycard"&gt;Everyone at Recurse is there because they want to learn. Recursers set their own syllabus and milestones. They can choose to work with others or to work independently.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Everyone at Recurse is there because they want to learn. Recursers set their own syllabus and milestones. They can choose to work with others or to work independently.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -49,6 +50,13 @@ Recrusers decide when their *personal objectives* have been met.&lt;/span&gt;&lt
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;span class="lead"&gt;I attended the Recurse Center because I wanted to be around other people excited about technology, I wanted to learn more about web development and data analystics using python, and I wanted to get back into the habit of coding daily.&lt;/span&gt;&lt;/p&gt;
+&lt;hr class="docutils" /&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In actuality, everyone at Recurse is both a teacher and a student. We are all experts at something and beginners at something else.&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
 </content><category term="blog"></category><category term="recurse"></category></entry><entry><title>Corpus Tool</title><link href="https://aiyanabrooks.com/corpus-tool.html" rel="alternate"></link><published>2019-11-01T22:45:00-04:00</published><updated>2019-11-01T22:45:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2019-11-01:/corpus-tool.html</id><summary type="html">&lt;p class="first last"&gt;This is a small web application designed to help researchers create a corpus of student writing.&lt;/p&gt;
 </summary><content type="html">&lt;div class="section" id="description"&gt;

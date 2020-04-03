@@ -15,7 +15,7 @@ Recurse Center
 
 
 
-
+:lead:`In January, I took a step toward reinvigorating my journey as a developer by joining The Recurse Center.`  
 
 *******************************
 WHAT IS THE RECURSE CENTER?
@@ -24,7 +24,7 @@ WHAT IS THE RECURSE CENTER?
 - It is *NOT* a school 
 - It is *NOT* a bootcamp
 - It is *NOT* an internship or apprenticeship
-- There are no teachers, classes, tests, midterms, assignments, or deadlines 
+- There are no teachers, classes, tests, midterms, assignments, or deadlines [#]_
 - There are no bosses, supervisors, managers, evaluations, or performance reviews
 
 :lead:`"The Recurse Center is a self-directed, community-driven educational retreat for programmers in New York City."`
@@ -38,21 +38,21 @@ WHAT IS THE RECURSE CENTER?
 **self-directed**
 ------------------
 
-:mycard:`At the Recurse Center, people decide for themselves how they want to spend their time. 
+At the Recurse Center, people decide for themselves how they want to spend their time. 
 Attendees (called Recursers) choose *what* to work on, *when* to work, and for *how long*. 
 Recursers decide *for themselves* when a project has reached completion. 
-Recrusers decide when their *personal objectives* have been met.` 
+Recrusers decide when their *personal objectives* have been met. 
 
 **community-driven**
 ----------------------
 
-:mycard:`All of the activites that occur at the Recurse Center (RC) are initiated, coordinated, and facilitated by attendees of the retreat. Any recurser is welcome to create a new event for the community.` 
+All of the activites that occur at the Recurse Center (RC) are initiated, coordinated, and facilitated by attendees of the retreat. Any recurser is welcome to create a new event for the community. 
 
 
 **educational-retreat**
 -------------------------
 
-:mycard:`Everyone at Recurse is there because they want to learn. Recursers set their own syllabus and milestones. They can choose to work with others or to work independently.`
+Everyone at Recurse is there because they want to learn. Recursers set their own syllabus and milestones. They can choose to work with others or to work independently.
 
 |
 
@@ -70,3 +70,8 @@ Recursers attend for various reasons.
 |
 
 :lead:`I attended the Recurse Center because I wanted to be around other people excited about technology, I wanted to learn more about web development and data analystics using python, and I wanted to get back into the habit of coding daily.`
+
+----
+
+.. [#] In actuality, everyone at Recurse is both a teacher and a student. We are all experts at something and beginners at something else. 
+
