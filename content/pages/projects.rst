@@ -1,8 +1,10 @@
 Projects
 ##########
 
-This is a list of some projects I have worked on for my own personal learning.
-Some of these were more successful than others.
+.. role:: lead
+
+:lead:`This is a list of some projects I have worked on for my own personal learning.
+Some of these were more successful than others.`
 
 |
 

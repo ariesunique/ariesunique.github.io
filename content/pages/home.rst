@@ -5,28 +5,25 @@ Welcome
 :save_as: index.html
 :status: hidden
 
+.. role:: lead
 
 |
 
-My name is Aiyana. I'm a python developer. 
--------------------------------------------
+:lead:`Hi, my name is Aiyana. I'm a python developer.` 
+
 |
 
-While you're here ...
-~~~~~~~~~~~~~~~~~~~~~~
+:lead:`While you're here ...`
+
 |
 
 Look at some of `my projects`_.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-|
 
 Read more `about me`_.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-|
+
 
 Read `how I built this site`_.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
 .. _about me: pages/about.html
