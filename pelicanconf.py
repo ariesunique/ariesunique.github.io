@@ -34,13 +34,15 @@ SIDEBAR_ON_LEFT = True
 DOCUTIL_CSS = True
 
 # Feed generation is usually not desired when developing
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
-AUTHOR_FEED_RSS = 'feeds/{slug}.rss.xml'
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 RSS_FEED_SUMMARY_ONLY = False
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
+
 
 
 
@@ -54,6 +56,7 @@ SOCIAL = (('github', 'https://github.com/ariesunique/'),
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
+
+# Use these settings For development; comment before committing
 #RELATIVE_URLS = True
-LOAD_CONTENT_CACHE = True
+#LOAD_CONTENT_CACHE = True
