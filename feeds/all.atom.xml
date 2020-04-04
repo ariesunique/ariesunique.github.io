@@ -9,7 +9,7 @@
 &lt;li&gt;&lt;a class="reference internal" href="#create-a-virtual-environment-and-install-pelican" id="id3"&gt;&lt;span class="text-warning"&gt;1. Create a virtual environment and install pelican&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#create-a-project-and-quickstart-your-site" id="id4"&gt;&lt;span class="text-warning"&gt;2. Create a project and quickstart your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#create-some-content" id="id5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#generate-your-content" id="id6"&gt;&lt;span class="text-warning"&gt;4. Generate your content.&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#generate-your-output" id="id6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="#preview-your-site" id="id7"&gt;&lt;span class="text-warning"&gt;5. Preview your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -53,7 +53,22 @@
 &amp;gt;&amp;gt; pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;For most of these, it is fine to leave the defaults or to simply choose &amp;quot;no&amp;quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) &lt;em&gt;What will be the title of this website?&lt;/em&gt; and (question 3) &lt;em&gt;Who will be the author of this website?&lt;/em&gt;&lt;/p&gt;
-&lt;img alt="Pelican Quickstart screenshot" src="../images/pelican-quickstart.png" /&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Welcome to pelican-quickstart v4.2.0.&lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;This script will help you create a new Pelican-based website.&lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Please answer the following questions so this script can generate the files needed by Pelican.&lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Where do you want to create your new web site? [.]&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the title of this web site? My Magical Website&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Who will be the author of this web site? Harry Potter&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the default language of this web site? [en]&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to enable article pagination? (Y/n) n&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What is your time zone? [Europe/Paris]&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) n&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Done. Your new project is available at /home/cabox/workspace/mysite&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
 After running pelican-quickstart, your directory structure will look similar to below:&lt;/p&gt;
 &lt;img alt="Pelican directory after quickstart" src="../images/pelican-directory-structure-1.png" /&gt;
@@ -73,13 +88,20 @@ Notice that the command created two empty directories -- &lt;strong&gt;content&l
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ..
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Below are sample contents of &lt;em&gt;article.rst&lt;/em&gt;. You must include a title and a date directive. In this case, the title of this article is &amp;quot;The Boy Who Lived&amp;quot; and it has a data of &lt;em&gt;2020-04-01&lt;/em&gt;.&lt;/p&gt;
-&lt;img alt="Article in restructuredText" src="../images/pelican-first-article.png" /&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;The Boy Who Lived&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;==================&lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;:date&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;2020-04-01&lt;/span&gt;
+
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Hi, my name is Harry Potter. Some people know me as &amp;quot;the boy who lived&amp;quot;. When I was a baby,&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;I defeated the most eveil wizard ever. But I didn&amp;#39;t know I was magical until after my 11th birthday.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="section" id="generate-your-content"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id6"&gt;&lt;span class="text-warning"&gt;4. Generate your content.&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="section" id="generate-your-output"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#id6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Now you can run the pelican command to generate the html files for your website. From your top-level directory, run &lt;em&gt;pelican content&lt;/em&gt;. This tells pelican to look in a directory called &amp;quot;content&amp;quot; for the markup files containing the data for your site (as well as any other static content that might be needed, such as images).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; pelican content
 &lt;/pre&gt;&lt;/div&gt;
