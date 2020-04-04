@@ -184,7 +184,7 @@
 
 <!-- Content Container -->
 {% if PADDED_SINGLE_COLUMN_STYLE %}
-    {% set content_class='col-md-8 col-md-offset-2' %}
+    {% set content_class='col-md-8 ' %}
 {% elif not HIDE_SIDEBAR or ABOUT_ME or AVATAR %}
     {% set content_class='col-sm-9' + (' col-sm-push-3' if SIDEBAR_ON_LEFT else '') %}
     {% set sidebar_class='col-sm-3' + (' col-sm-pull-9' if SIDEBAR_ON_LEFT else '') %}
