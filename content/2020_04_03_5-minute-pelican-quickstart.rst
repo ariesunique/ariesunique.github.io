@@ -70,8 +70,24 @@ Pelican comes with a handy command-line tool that will enable you to quickly set
     
 For most of these, it is fine to leave the defaults or to simply choose "no". You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) *What will be the title of this website?* and (question 3) *Who will be the author of this website?*    
 
-.. image:: ../images/pelican-quickstart.png 
-    :alt: Pelican Quickstart screenshot
+.. code-block:: yaml
+
+    Welcome to pelican-quickstart v4.2.0.
+    
+    This script will help you create a new Pelican-based website.
+    
+    Please answer the following questions so this script can generate the files needed by Pelican.
+    
+    > Where do you want to create your new web site? [.]
+    > What will be the title of this web site? My Magical Website
+    > Who will be the author of this web site? Harry Potter
+    > What will be the default language of this web site? [en]
+    > Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n
+    > Do you want to enable article pagination? (Y/n) n
+    > What is your time zone? [Europe/Paris]
+    > Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) n
+    Done. Your new project is available at /home/cabox/workspace/mysite
+
 
 |br|
 After running pelican-quickstart, your directory structure will look similar to below:
@@ -102,12 +118,19 @@ Pelican enables you to write your content using either `reStructuredText <https:
 
 Below are sample contents of *article.rst*. You must include a title and a date directive. In this case, the title of this article is "The Boy Who Lived" and it has a data of *2020-04-01*.
 
-.. image:: ../images/pelican-first-article.png
-    :alt: Article in restructuredText
+.. code-block:: yaml
+
+    The Boy Who Lived
+    ==================
+    
+    :date: 2020-04-01
+    
+    Hi, my name is Harry Potter. Some people know me as "the boy who lived". When I was a baby, 
+    I defeated the most eveil wizard ever. But I didn't know I was magical until after my 11th birthday.
     
 |
 
-:text-warning:`4. Generate your content.`
+:text-warning:`4. Generate your output`
 ==========================================
 
 Now you can run the pelican command to generate the html files for your website. From your top-level directory, run *pelican content*. This tells pelican to look in a directory called "content" for the markup files containing the data for your site (as well as any other static content that might be needed, such as images).
