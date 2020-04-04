@@ -25,6 +25,7 @@ PLUGINS = ['i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 DISPLAY_PAGES_ON_MENU = True
+#PADDED_SINGLE_COLUMN_STYLE = True
 
 # this will show date on the category page
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
