@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Mon, 17 Feb 2020 18:56:00 -0500</lastBuildDate><item><title>Recurse Center</title><link>https://aiyanabrooks.com/recurse-center.html</link><description>&lt;p&gt;&lt;span class="lead"&gt;In January, I took a step toward reinvigorating my journey as a developer by joining The Recurse Center.&lt;/span&gt;&lt;/p&gt;
+<rss version="2.0"><channel><title>Aiyana Brooks</title><link>https://aiyanabrooks.com/</link><description></description><lastBuildDate>Fri, 03 Apr 2020 16:30:00 -0400</lastBuildDate><item><title>5 Minute Pelican Quickstart</title><link>https://aiyanabrooks.com/5-minute-pelican-quickstart.html</link><description>&lt;p&gt;&lt;span class="lead"&gt;Get started with Pelican in 5 minutes or less. By the end of this post, you will be able to install pelican and generate a very simple site on your local environment.&lt;/span&gt;&lt;/p&gt;
+&lt;div class="section" id="what-is-pelican"&gt;
+&lt;h2&gt;&lt;span class="text-primary"&gt;What is Pelican?&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Pelican is a static site generator written in Python.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-can-i-get-started"&gt;
+&lt;h2&gt;&lt;span class="text-primary"&gt;How can I get started?&lt;/span&gt;&lt;/h2&gt;
+&lt;p&gt;Getting started with Pelican is extremely easy.&lt;/p&gt;
+&lt;p&gt;Make sure you have a python environment already setup. If you do not, you can easily work in the cloud using CloudAnywhere  - nothing to install, simply create a free account on Cloud Anywhere to get started. Create a new Container. Choose the python stack which already has pip, pyenv, and virtualenv preinstalled. You can choose between Ubuntu or Centos.&lt;/p&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;&lt;strong&gt;Create a virtual environment and install pelican.&lt;/strong&gt; I like to keep all of my virtual environments in a separate &amp;quot;envs&amp;quot; directory, so that I can easily see how many virtual environments I have on my system. Below are the commands that I ran to set up my virtual environment and install pelican. &lt;em&gt;Note, that after creating a virtual environment using pip, it is always a good idea to update your pip, as the version in your virtual env might not be the most up-to-date (regardless of the pip version in your main python installation).&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; mkdir envs
+&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; envs
+&amp;gt;&amp;gt; python -m venv mysite
+&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ..
+&amp;gt;&amp;gt; &lt;span class="nb"&gt;source&lt;/span&gt; envs/mysite/bin/activate
+&amp;gt;&amp;gt; pip install pip --upgrade
+&amp;gt;&amp;gt; pip install pelican
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="2"&gt;
+&lt;li&gt;&lt;strong&gt;Create a project and quickstart your site.&lt;/strong&gt; Pelican comes with a handy command-line tool that will enable you to quickly set up your site by answering a few questions. You will need to create a directory that will house your site and cd into that directory. Then run the &amp;quot;pelican-quickstart&amp;quot; command.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; mkdir mysite
+&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; mysite
+&amp;gt;&amp;gt; pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For most of these, it is fine to leave the defaults or to simply choose &amp;quot;no&amp;quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) &lt;em&gt;What will be the title of this website?&lt;/em&gt; and (question 3) &lt;em&gt;Who will be the author of this website?&lt;/em&gt;&lt;/p&gt;
+&lt;img alt="Pelican Quickstart screenshot" src="../images/pelican-quickstart.png" /&gt;
+&lt;p&gt;&lt;br /&gt;
+That command will create two empty directories -- content and output -- and create two python files -- pelicanconf.py and publishconf.py. Your directory structure now look similar to below:&lt;/p&gt;
+&lt;img alt="Pelican directory after quickstart" src="../images/pelican-directory-structure-1.png" /&gt;
+&lt;p&gt;&lt;br /&gt;
+Below is the generated pelicanconf.py file.&lt;/p&gt;
+&lt;img alt="pelicanconf.py" src="../images/pelican-conf-file.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="3"&gt;
+&lt;li&gt;&lt;strong&gt;Create some content.&lt;/strong&gt; Pelican enables you to write your content using either reStructuredText or Markdown. In order to use Markdown, you will need install the markdown library for python. For this example, I will use reStructuredText since it is supported out-of-the-box.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; content
+&amp;gt;&amp;gt; vi article.rst
+&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ..
+&lt;/pre&gt;&lt;/div&gt;
+&lt;img alt="Article in restructuredText" src="../images/pelican-first-article.png" /&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="4"&gt;
+&lt;li&gt;&lt;strong&gt;Generate your content.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; pelican content
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="line-block"&gt;
+&lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ol class="arabic simple" start="5"&gt;
+&lt;li&gt;&lt;strong&gt;Preview your site.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; output
+&amp;gt;&amp;gt; python -m http.server
+&lt;/pre&gt;&lt;/div&gt;
+&lt;img alt="Barebones site" src="../images/pelican-initial-site-screenshot.png" /&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Aiyana</dc:creator><pubDate>Fri, 03 Apr 2020 16:30:00 -0400</pubDate><guid isPermaLink="false">tag:aiyanabrooks.com,2020-04-03:/5-minute-pelican-quickstart.html</guid><category>blog</category><category>pelican</category></item><item><title>Recurse Center</title><link>https://aiyanabrooks.com/recurse-center.html</link><description>&lt;p&gt;&lt;span class="lead"&gt;In January, I took a step toward reinvigorating my journey as a developer by joining The Recurse Center.&lt;/span&gt;&lt;/p&gt;
 &lt;div class="section" id="what-is-the-recurse-center"&gt;
 &lt;h2&gt;WHAT IS THE RECURSE CENTER?&lt;/h2&gt;
 &lt;ul class="simple"&gt;
