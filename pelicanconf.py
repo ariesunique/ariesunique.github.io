@@ -44,6 +44,10 @@ DOCUTIL_CSS = True
 #PADDED_SINGLE_COLUMN_STYLE = True
 ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student."
 #AVATAR = "images/penguin.jpg"
+
+DISPLAY_TAGS_ON_SIDEBAR = True  # tag_cloud plugin must also be installed
+DISPLAY_TAGS_INLINE = False
+TAGS_URL = "tags.html"
     
     
 ###############################
@@ -65,7 +69,7 @@ TRANSLATION_FEED_ATOM = None
 ###############################
 
 # Blogroll
-LINKS = (('TESOL Portfolio', 'http://aiyanabrookstesol.strikingly.com/'),
+LINKS = (('My TESOL Portfolio', 'http://aiyanabrookstesol.strikingly.com/'),
          )
 
 # Social widgets
