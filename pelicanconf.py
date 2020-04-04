@@ -2,39 +2,54 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+###############################
+#   MAIN SETTINGS
+###############################
+
 AUTHOR = 'Aiyana'
 SITENAME = "Aiyana Brooks"
 SITEURL = 'https://aiyanabrooks.com'
 FAVICON = 'images/favicon.png'
+TIMEZONE = 'America/New_York'
+DEFAULT_LANG = 'en'
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-TIMEZONE = 'America/New_York'
 
-DEFAULT_LANG = 'en'
+###############################
+#   THEME SETTINGS
+###############################
 
-# Theme settings
 THEME = "themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'cerulean'  #try flatly if you get sick of cerulean
-ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student."
-#AVATAR = "images/penguin.jpg"
+
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['i18n_subsites']
+PLUGINS = ['i18n_subsites', 'tag_cloud']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 DISPLAY_PAGES_ON_MENU = True
-#PADDED_SINGLE_COLUMN_STYLE = True
-
-# this will show date on the category page
-DISPLAY_ARTICLE_INFO_ON_INDEX = True
-
-#SIDEBAR_ON_LEFT = True
+DISPLAY_ARTICLE_INFO_ON_INDEX = True  # this wills show the date on the main blog list
+DEFAULT_PAGINATION = 10
 
 DOCUTIL_CSS = True
 
-# Feed generation is usually not desired when developing
+
+###############################
+#   SIDEBAR SETTINGS
+###############################
+
+#SIDEBAR_ON_LEFT = True
+#PADDED_SINGLE_COLUMN_STYLE = True
+ABOUT_ME = "My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student."
+#AVATAR = "images/penguin.jpg"
+    
+    
+###############################
+#   FEED SETTINGS
+###############################
+
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
@@ -45,19 +60,23 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 
-
+###############################
+#   LINKS
+###############################
 
 # Blogroll
 LINKS = (('TESOL Portfolio', 'http://aiyanabrookstesol.strikingly.com/'),
          )
 
-# Social widget
+# Social widgets
 SOCIAL = (('github', 'https://github.com/ariesunique/'),
           ('bitbucket', 'https://bitbucket.org/ariesunique/'))
 
-DEFAULT_PAGINATION = 10
 
 
-# Use these settings For development; comment before committing
+###############################
+#   DEV SETTINGS (comment before committing)
+###############################
+
 #RELATIVE_URLS = True
 #LOAD_CONTENT_CACHE = True
