@@ -99,7 +99,7 @@ Aiyana Brooks            </a>
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2020-04-03T16:30:00-04:00"> Fri 03 April 2020</time>
+        <i class="fa fa-calendar"></i><time datetime="2020-04-03T00:00:00-04:00"> Fri 03 April 2020</time>
     </span>
 
 
@@ -112,20 +112,38 @@ Aiyana Brooks            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <p><span class="lead">Get started with Pelican in 5 minutes or less. By the end of this post, you will be able to install pelican and generate a very simple site on your local environment.</span></p>
-<div class="section" id="what-is-pelican">
-<h2><span class="text-primary">What is Pelican?</span></h2>
-<p>Pelican is a static site generator written in Python.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#what-is-pelican" id="id1"><span class="text-primary">What is Pelican?</span></a></li>
+<li><a class="reference internal" href="#how-can-i-get-started" id="id2"><span class="text-primary">How can I get started?</span></a><ul>
+<li><a class="reference internal" href="#create-a-virtual-environment-and-install-pelican" id="id3"><span class="text-warning">1. Create a virtual environment and install pelican</span></a></li>
+<li><a class="reference internal" href="#create-a-project-and-quickstart-your-site" id="id4"><span class="text-warning">2. Create a project and quickstart your site</span></a></li>
+<li><a class="reference internal" href="#create-some-content" id="id5"><span class="text-warning">3. Create some content</span></a></li>
+<li><a class="reference internal" href="#generate-your-content" id="id6"><span class="text-warning">4. Generate your content.</span></a></li>
+<li><a class="reference internal" href="#preview-your-site" id="id7"><span class="text-warning">5. Preview your site</span></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-s-next" id="id8"><span class="text-primary">What's next?</span></a></li>
+</ul>
 </div>
-<div class="section" id="how-can-i-get-started">
-<h2><span class="text-primary">How can I get started?</span></h2>
-<p>Getting started with Pelican is extremely easy.</p>
-<p>Make sure you have a python environment already setup. If you do not, you can easily work in the cloud using CloudAnywhere  - nothing to install, simply create a free account on Cloud Anywhere to get started. Create a new Container. Choose the python stack which already has pip, pyenv, and virtualenv preinstalled. You can choose between Ubuntu or Centos.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ol class="arabic simple">
-<li><strong>Create a virtual environment and install pelican.</strong> I like to keep all of my virtual environments in a separate &quot;envs&quot; directory, so that I can easily see how many virtual environments I have on my system. Below are the commands that I ran to set up my virtual environment and install pelican. <em>Note, that after creating a virtual environment using pip, it is always a good idea to update your pip, as the version in your virtual env might not be the most up-to-date (regardless of the pip version in your main python installation).</em></li>
-</ol>
+<div class="section" id="what-is-pelican">
+<h2><a class="toc-backref" href="#id1"><span class="text-primary">What is Pelican?</span></a></h2>
+<p><a class="reference external" href="https://blog.getpelican.com/">Pelican</a> is a static site generator written in Python. In a nutshell, a static site generator is a library/framework/codebase that generates HTML files using rules specified in config files and content written in some type of markup language. With a static site generator, the HTML files are generated on your local machine, and you push all the files (ie, the entire website) to your web server. To read more about static site generators, <a class="reference external" href="https://davidwalsh.name/introduction-static-site-generators">click here</a> or <a class="reference external" href="https://www.infoworld.com/article/3340827/what-is-a-static-site-generator-static-website-tools-explained.html">here</a>. There are <a class="reference external" href="https://www.staticgen.com/">many static site generators</a>, but I like Pelican because it is built in Python, which is my language of choice these days. This makes it easy for me to tinker with the underlying code.</p>
+</div>
+<div class="section" id="how-can-i-get-started">
+<h2><a class="toc-backref" href="#id2"><span class="text-primary">How can I get started?</span></a></h2>
+<p>Getting started with Pelican is extremely easy.</p>
+<p>Make sure you have a python environment already setup. If you do not, you can easily work in the cloud using <a class="reference external" href="https://codeanywhere.com/">CodeAnywhere</a>  - nothing to install, simply create a free account on CodeAnywhere to get started. Then create a new Container and choose the python stack which already has pip, pyenv, and virtualenv preinstalled (you can choose between Ubuntu or Centos).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="create-a-virtual-environment-and-install-pelican">
+<h3><a class="toc-backref" href="#id3"><span class="text-warning">1. Create a virtual environment and install pelican</span></a></h3>
+<p>I like to keep all of my virtual environments in a separate &quot;envs&quot; directory, so that I can easily see how many virtual environments I have on my system. Below are the commands that I ran to set up my virtual environment and install pelican. <em>Note, that after creating a virtual environment using pip, it is always a good idea to update your pip, as the version in your virtual env might not be the most up-to-date (regardless of the pip version in your main python installation).</em></p>
 <div class="highlight"><pre><span></span>&gt;&gt; mkdir envs
 &gt;&gt; <span class="nb">cd</span> envs
 &gt;&gt; python -m venv mysite
@@ -137,9 +155,10 @@ Aiyana Brooks            </a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ol class="arabic simple" start="2">
-<li><strong>Create a project and quickstart your site.</strong> Pelican comes with a handy command-line tool that will enable you to quickly set up your site by answering a few questions. You will need to create a directory that will house your site and cd into that directory. Then run the &quot;pelican-quickstart&quot; command.</li>
-</ol>
+</div>
+<div class="section" id="create-a-project-and-quickstart-your-site">
+<h3><a class="toc-backref" href="#id4"><span class="text-warning">2. Create a project and quickstart your site</span></a></h3>
+<p>Pelican comes with a handy command-line tool that will enable you to quickly set up your site by answering a few questions. You will need to create a directory that will house your site and cd into that directory. Then run the &quot;pelican-quickstart&quot; command.</p>
 <div class="highlight"><pre><span></span>&gt;&gt; mkdir mysite
 &gt;&gt; <span class="nb">cd</span> mysite
 &gt;&gt; pelican-quickstart
@@ -147,40 +166,58 @@ Aiyana Brooks            </a>
 <p>For most of these, it is fine to leave the defaults or to simply choose &quot;no&quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) <em>What will be the title of this website?</em> and (question 3) <em>Who will be the author of this website?</em></p>
 <img alt="Pelican Quickstart screenshot" src="../images/pelican-quickstart.png" />
 <p><br />
-That command will create two empty directories -- content and output -- and create two python files -- pelicanconf.py and publishconf.py. Your directory structure now look similar to below:</p>
+After running pelican-quickstart, your directory structure will look similar to below:</p>
 <img alt="Pelican directory after quickstart" src="../images/pelican-directory-structure-1.png" />
 <p><br />
-Below is the generated pelicanconf.py file.</p>
+Notice that the command created two empty directories -- <strong>content</strong> and <strong>output</strong> -- and two python files -- <strong>pelicanconf.py</strong> and <strong>publishconf.py</strong>. &quot;content&quot; is where you will write all of your markup. Pelican will grab data from this directory when it is generating your site. All of the files that Pelican generates for your actual website (html, css, etc) will be stored in the &quot;output&quot; directory. The two python files generated specify configuration options for <em>how</em> pelican will generate the files. For now, the main one to look at is <em>pelicanconf.py</em>.</p>
+<p>Below is the generated pelicanconf.py file. You should see some of your responses from the pelican-quickstart command.</p>
 <img alt="pelicanconf.py" src="../images/pelican-conf-file.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ol class="arabic simple" start="3">
-<li><strong>Create some content.</strong> Pelican enables you to write your content using either reStructuredText or Markdown. In order to use Markdown, you will need install the markdown library for python. For this example, I will use reStructuredText since it is supported out-of-the-box.</li>
-</ol>
+</div>
+<div class="section" id="create-some-content">
+<h3><a class="toc-backref" href="#id5"><span class="text-warning">3. Create some content</span></a></h3>
+<p>Pelican enables you to write your content using either <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">reStructuredText</a> or <a class="reference external" href="https://www.markdownguide.org/">Markdown</a>. In order to use Markdown, you will need install the markdown library for python ( <em>pip install markdown</em> ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the &quot;content&quot; directory. Create a file called <em>article.rst</em> and then move back up to the top level directory of your website.</p>
 <div class="highlight"><pre><span></span>&gt;&gt; <span class="nb">cd</span> content
 &gt;&gt; vi article.rst
 &gt;&gt; <span class="nb">cd</span> ..
 </pre></div>
+<p>Below are sample contents of <em>article.rst</em>. You must include a title and a date directive. In this case, the title of this article is &quot;The Boy Who Lived&quot; and it has a data of <em>2020-04-01</em>.</p>
 <img alt="Article in restructuredText" src="../images/pelican-first-article.png" />
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ol class="arabic simple" start="4">
-<li><strong>Generate your content.</strong></li>
-</ol>
+</div>
+<div class="section" id="generate-your-content">
+<h3><a class="toc-backref" href="#id6"><span class="text-warning">4. Generate your content.</span></a></h3>
+<p>Now you can run the pelican command to generate the html files for your website. From your top-level directory, run <em>pelican content</em>. This tells pelican to look in a directory called &quot;content&quot; for the markup files containing the data for your site (as well as any other static content that might be needed, such as images).</p>
 <div class="highlight"><pre><span></span>&gt;&gt; pelican content
 </pre></div>
+<p>After running this command, your directory structure should look similar to below. Notice all of the files that are now in the output directory.</p>
+<img alt="Pelican directory after generating content" src="../images/pelican-directory-structure-2.png" />
+<p><br />
+Most of these files are &quot;collection&quot; pages that will display various aggregates of your data. For example, the categories page will display a list of categories you have specified and the number of articles in each category. The default category is <em>misc</em>, so if you do not specify any categories, all of your articles will be part of the <em>misc</em> category.</p>
+<p>The file we are most interested is the one that directly corresponds to the article.rst file we provided in the content directory. That file is called <em>the-boy-who-lived.html</em>. Notice that the title provided is used to generate a url-safe version of the slug.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ol class="arabic simple" start="5">
-<li><strong>Preview your site.</strong></li>
-</ol>
+</div>
+<div class="section" id="preview-your-site">
+<h3><a class="toc-backref" href="#id7"><span class="text-warning">5. Preview your site</span></a></h3>
+<p>Now you're ready to see how this looks in your development environment. Move into the output directory and start up a python server. Then navigate to your localhost and view the page. <em>(Note: If you are using CodeAnywhere, you will need to pass 3000 to the server command to specify the port. So the command will look like ( python -m http.server 3000 ). Additionally, instead of navigating to localhost, you will click on the url of your container which you can find by right-clicking on the container name and choosing Info).</em></p>
 <div class="highlight"><pre><span></span>&gt;&gt; <span class="nb">cd</span> output
 &gt;&gt; python -m http.server
 </pre></div>
 <img alt="Barebones site" src="../images/pelican-initial-site-screenshot.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="what-s-next">
+<h2><a class="toc-backref" href="#id8"><span class="text-primary">What's next?</span></a></h2>
+<p>Voila! In only a few minutes, you have a full-fledged website running on your local environment. The next things you would want to do are add more content, customize the look and feel of your site, and then deploy it somewhere so your friends and family can view it.</p>
 </div>
 
             </div>
