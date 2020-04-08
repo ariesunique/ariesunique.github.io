@@ -52,7 +52,7 @@
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; mysite
 &amp;gt;&amp;gt; pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;For most of these, it is fine to leave the defaults or to simply choose &amp;quot;no&amp;quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) &lt;em&gt;What will be the title of this website?&lt;/em&gt; and (question 3) &lt;em&gt;Who will be the author of this website?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For most of these, it is fine to leave the defaults or to simply choose &amp;quot;no&amp;quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) &lt;em&gt;What will be the title of this website?&lt;/em&gt; and (question 3) &lt;em&gt;Who will be the author of this website?&lt;/em&gt; (Note: my answers to these questions were &amp;quot;My Magical Website&amp;quot; and &amp;quot;Harry Potter&amp;quot;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Welcome to pelican-quickstart v4.2.0.&lt;/span&gt;
 
 &lt;span class="l l-Scalar l-Scalar-Plain"&gt;This script will help you create a new Pelican-based website.&lt;/span&gt;
@@ -82,12 +82,12 @@ Notice that the command created two empty directories -- &lt;strong&gt;content&l
 &lt;/div&gt;
 &lt;div class="section" id="create-some-content"&gt;
 &lt;h3&gt;&lt;a class="toc-backref" href="#id5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Pelican enables you to write your content using either &lt;a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html"&gt;reStructuredText&lt;/a&gt; or &lt;a class="reference external" href="https://www.markdownguide.org/"&gt;Markdown&lt;/a&gt;. In order to use Markdown, you will need install the markdown library for python ( &lt;em&gt;pip install markdown&lt;/em&gt; ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the &amp;quot;content&amp;quot; directory. Create a file called &lt;em&gt;article.rst&lt;/em&gt; and then move back up to the top level directory of your website.&lt;/p&gt;
+&lt;p&gt;Pelican enables you to write your content using either &lt;a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html"&gt;reStructuredText&lt;/a&gt; or &lt;a class="reference external" href="https://www.markdownguide.org/"&gt;Markdown&lt;/a&gt;. In order to use Markdown, you will need to install the markdown library for python ( &lt;em&gt;pip install markdown&lt;/em&gt; ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the &amp;quot;content&amp;quot; directory. Create a file called &lt;em&gt;article.rst&lt;/em&gt; and then move back up to the top level directory of your website.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; content
 &amp;gt;&amp;gt; vi article.rst
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ..
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Below are sample contents of &lt;em&gt;article.rst&lt;/em&gt;. You must include a title and a date directive. In this case, the title of this article is &amp;quot;The Boy Who Lived&amp;quot; and it has a data of &lt;em&gt;2020-04-01&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Below are sample contents of &lt;em&gt;article.rst&lt;/em&gt;. You must include a title and a date directive. In this case, the title of this article is &amp;quot;The Boy Who Lived&amp;quot; and it has a date of &lt;em&gt;2020-04-01&lt;/em&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;The Boy Who Lived&lt;/span&gt;
 &lt;span class="l l-Scalar l-Scalar-Plain"&gt;==================&lt;/span&gt;
 
@@ -109,7 +109,7 @@ Notice that the command created two empty directories -- &lt;strong&gt;content&l
 &lt;img alt="Pelican directory after generating content" src="../images/pelican-directory-structure-2.png" /&gt;
 &lt;p&gt;&lt;br /&gt;
 Most of these files are &amp;quot;collection&amp;quot; pages that will display various aggregates of your data. For example, the categories page will display a list of categories you have specified and the number of articles in each category. The default category is &lt;em&gt;misc&lt;/em&gt;, so if you do not specify any categories, all of your articles will be part of the &lt;em&gt;misc&lt;/em&gt; category.&lt;/p&gt;
-&lt;p&gt;The file we are most interested is the one that directly corresponds to the article.rst file we provided in the content directory. That file is called &lt;em&gt;the-boy-who-lived.html&lt;/em&gt;. Notice that the title provided is used to generate a url-safe version of the slug.&lt;/p&gt;
+&lt;p&gt;The file we are most interested in is the one that directly corresponds to the article.rst file we provided in the content directory. That file is called &lt;em&gt;the-boy-who-lived.html&lt;/em&gt;. Notice that the title provided is used to generate a url-safe version of the slug.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
