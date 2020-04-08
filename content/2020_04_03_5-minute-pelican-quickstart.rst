@@ -68,7 +68,7 @@ Pelican comes with a handy command-line tool that will enable you to quickly set
     >> cd mysite
     >> pelican-quickstart
     
-For most of these, it is fine to leave the defaults or to simply choose "no". You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) *What will be the title of this website?* and (question 3) *Who will be the author of this website?*    
+For most of these, it is fine to leave the defaults or to simply choose "no". You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) *What will be the title of this website?* and (question 3) *Who will be the author of this website?* (Note: my answers to these questions were "My Magical Website" and "Harry Potter")   
 
 .. code-block:: yaml
 
@@ -108,7 +108,7 @@ Below is the generated pelicanconf.py file. You should see some of your response
 :text-warning:`3. Create some content`
 ========================================
 
-Pelican enables you to write your content using either `reStructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ or `Markdown <https://www.markdownguide.org/>`_. In order to use Markdown, you will need install the markdown library for python ( *pip install markdown* ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the "content" directory. Create a file called *article.rst* and then move back up to the top level directory of your website.
+Pelican enables you to write your content using either `reStructuredText <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_ or `Markdown <https://www.markdownguide.org/>`_. In order to use Markdown, you will need to install the markdown library for python ( *pip install markdown* ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the "content" directory. Create a file called *article.rst* and then move back up to the top level directory of your website.
 
 .. code-block:: shell
 
@@ -116,7 +116,7 @@ Pelican enables you to write your content using either `reStructuredText <https:
     >> vi article.rst
     >> cd ..
 
-Below are sample contents of *article.rst*. You must include a title and a date directive. In this case, the title of this article is "The Boy Who Lived" and it has a data of *2020-04-01*.
+Below are sample contents of *article.rst*. You must include a title and a date directive. In this case, the title of this article is "The Boy Who Lived" and it has a date of *2020-04-01*.
 
 .. code-block:: yaml
 
@@ -147,7 +147,7 @@ After running this command, your directory structure should look similar to belo
 |br|
 Most of these files are "collection" pages that will display various aggregates of your data. For example, the categories page will display a list of categories you have specified and the number of articles in each category. The default category is *misc*, so if you do not specify any categories, all of your articles will be part of the *misc* category.
 
-The file we are most interested is the one that directly corresponds to the article.rst file we provided in the content directory. That file is called *the-boy-who-lived.html*. Notice that the title provided is used to generate a url-safe version of the slug.
+The file we are most interested in is the one that directly corresponds to the article.rst file we provided in the content directory. That file is called *the-boy-who-lived.html*. Notice that the title provided is used to generate a url-safe version of the slug.
 
 |
 
