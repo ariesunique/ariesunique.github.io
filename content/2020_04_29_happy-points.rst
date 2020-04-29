@@ -36,7 +36,7 @@ The initial aim of this project was to implement a rewards system for my daughte
 
 The front-end is written in React (javascript) and the backend is written as a Flask (python) RESTful API.
 
-:text-warning:`You can view the code and try it out yourself from the` `GitHub Repository <https://github.com/ariesunique/happy_points>`_.`
+:text-warning:`You can view the code and try it out yourself from the` `GitHub Repository <https://github.com/ariesunique/happy_points>`_.
 
 |
 
