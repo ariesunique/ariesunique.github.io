@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Happy Points: A Homeschooling Rewards App - Aiyana Brooks</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
+
+<link rel="canonical" href="https://aiyanabrooks.com/happy-points.html">
+
+        <meta name="author" content="Aiyana" />
+        <meta name="keywords" content="flask,python" />
+        <meta name="description" content="An application to track your child&#39;s behavior. The application is built using React on the frontend and Flask on the backend. Guardians can log good and bad behavior as &#34;happy&#34; or &#34;sad&#34; faces, and include notes about the behavior." />
+
+        <meta property="og:site_name" content="Aiyana Brooks" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Happy Points: A Homeschooling Rewards App"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/happy-points.html"/>
+        <meta property="og:description" content="An application to track your child&#39;s behavior. The application is built using React on the frontend and Flask on the backend. Guardians can log good and bad behavior as &#34;happy&#34; or &#34;sad&#34; faces, and include notes about the behavior."/>
+        <meta property="article:published_time" content="2020-04-29" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="flask" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:author" content="Aiyana" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://aiyanabrooks.com/theme/css/bootstrap.cerulean.min.css" type="text/css"/>
+    <link href="https://aiyanabrooks.com/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://aiyanabrooks.com/theme/css/pygments/native.css" rel="stylesheet">
+        <link href="https://aiyanabrooks.com/theme/css/html4css1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://aiyanabrooks.com/theme/css/style.css" type="text/css"/>
+
+        <link href="https://aiyanabrooks.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Aiyana Brooks ATOM Feed"/>
+
+        <link href="https://aiyanabrooks.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="Aiyana Brooks RSS Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="https://aiyanabrooks.com/" class="navbar-brand">
+Aiyana Brooks            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="https://aiyanabrooks.com/pages/about.html">
+                             About
+                          </a></li>
+                         <li><a href="https://aiyanabrooks.com/pages/projects.html">
+                             Projects
+                          </a></li>
+                        <li class="active">
+                            <a href="https://aiyanabrooks.com/category/blog.html">Blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://aiyanabrooks.com/happy-points.html"
+                       rel="bookmark"
+                       title="Permalink to Happy Points: A Homeschooling Rewards App">
+                        Happy Points: A Homeschooling Rewards App
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2020-04-29T10:07:00-04:00"> Wed 29 April 2020</time>
+    </span>
+
+
+
+
+
+<span class="text-primary"><em>TAGS</em></span>
+	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
+        /
+	<a href="https://aiyanabrooks.com/tag/python.html">python</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p><span class="lead">Given the COVID-19 pandemic, I am currently homeschooling my first-grader. To better motivate both of us during this transition, I created a small application to create a rewards system for my daughter.</span></p>
+<p><strong>Check out the code on</strong> <a class="reference external" href="https://github.com/ariesunique/happy_points/">GitHub</a></p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#summary-tl-dr" id="id1"><span class="text-primary">Summary (TL;DR)</span></a></li>
+<li><a class="reference internal" href="#background-motivation" id="id2"><span class="text-primary">Background (Motivation)</span></a></li>
+<li><a class="reference internal" href="#technical-specs-and-development-process" id="id3"><span class="text-primary">Technical Specs and Development Process</span></a></li>
+<li><a class="reference internal" href="#what-i-learned" id="id4"><span class="text-primary">What I Learned</span></a></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="summary-tl-dr">
+<h2><a class="toc-backref" href="#id1"><span class="text-primary">Summary (TL;DR)</span></a></h2>
+<p>The initial aim of this project was to implement a rewards system for my daughter. Good behavior earns a happy face; bad behavior earns a sad face. The total number of points earned on a given day is the difference between happy faces and sad faces. Points are accumulated per week, and can be redeemed throughout the week for various prizes (ie, good behavior earns rewards).</p>
+<p>The front-end is written in React (javascript) and the backend is written as a Flask (python) RESTful API.</p>
+<p><span class="text-warning">You can view the code and try it out yourself from the</span> <a class="reference external" href="https://github.com/ariesunique/happy_points">GitHub Repository</a>.`</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="background-motivation">
+<h2><a class="toc-backref" href="#id2"><span class="text-primary">Background (Motivation)</span></a></h2>
+<p>Since March 12, I (like many other parents) have been homeschooling my daughter due to novel coronavirus pandemic that has fundamentally changed life as we know it. As of the date that I am writing this, my daughter has been out of school for 6 weeks (but who’s counting).</p>
+<p><br />
+My daughter is 6 years old and in first grade. Like most kids her age, she responds well to extrinsic motivation – stickers, candy, etc. The possibility of a potential reward will generally get her to be more focused on the task-at-hand. When she was in school, her teachers used an application called ClassDojo and via the app they would award children “Dojo Points” for good behavior.</p>
+<p><br />
+I realized I needed a similar application if I wanted my daughter to take my “homeschool” seriously. For a few days, I used what I called a “happy face” system – if she did something good, like “staying focused”, I would draw a happy face on a piece of paper. If she did something she knew she wasn’t supposed to do, like being mean to her sister, she would get a sad face on the paper. At the end of the day we would count the happy and sad faces.</p>
+<img alt="Happy Points paper version" src="../images/happy-points-paper-version-490x344.jpg" />
+<p><br />
+She responded really well to this system, and this inspired me to turn this into a learning opportunity for myself as well by turning this into an application.</p>
+<p><br />
+<span class="lead">Being a developer, I realized I could use this as the perfect opportunity to build an application that would benefit both me and my daughter!</span></p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="technical-specs-and-development-process">
+<h2><a class="toc-backref" href="#id3"><span class="text-primary">Technical Specs and Development Process</span></a></h2>
+<p>“Happy Faces” is a web application which tracks a child’s behavior using happy faces and sad faces. It is basically the web version of exactly what I was doing on paper.</p>
+<img alt="Happy Points app" src="../images/happy-points-with-data-820x461.png" />
+<p><br />
+For the web version, I decided to use React on the front-end and a Flask REST server on the backend.</p>
+<p><br />
+The React front-end is a single page consisting of two main components. PointsView.js contains a form to enter the number of happy or sad faces and a list of “happy points” accumulated for the week. Points.js renders each entry in the list and consists of a date, the number of happy and sad faces for that day, and a list of notes for that day.</p>
+<p><br />
+The backend consists of a REST API written in Flask. The API consists of a single endpoint. I’m using Flask-SqlAlchemy for the ORM, and sqlite for the local database (although if I move this to heroku, I would use postgres).</p>
+</div>
+<div class="section" id="what-i-learned">
+<h2><a class="toc-backref" href="#id4"><span class="text-primary">What I Learned</span></a></h2>
+<p>This was a fun project to work on. I presented a brief demo of this at the <a class="reference external" href="https://aiyanabrooks.com/recurse-center.html">Recurse Center</a> (<a class="reference external" href="https://docs.google.com/presentation/d/1QM0Tzeo21AUVCAAQKMsd2T-eQKxw0LWhXybTzy9LUas/edit?usp=sharing">click here</a> for slides).</p>
+<p>Below is a random list of some things I learned/ noticed while working on this.</p>
+<ul class="simple">
+<li>This was my first time building anything using React. It was cool to see how components work together.</li>
+<li>I learned a bit about how the &quot;__init__&quot; file works. It took me a minute to understand how to import things. I also think I understand flask blueprints a bit better.</li>
+<li>Did a bit of test-driven development on this project. I attempted to write some test cases first. I'm using pytest.</li>
+<li>I think I wrote pretty good documentation for this. This is my best documented project on <a class="reference external" href="https://github.com/ariesunique/happy_points/">GitHub</a> to date. I also learned about some nifty online tools for editing markdown, such as <a class="reference external" href="https://dillinger.io/">Dillinger</a>, which provides a preview of your markdown text as you type, and <a class="reference external" href="https://ecotrust-canada.github.io/markdown-toc/">this tool</a> for generating a table of contents for your GitHub ReadMe.</li>
+<li>Got to use a really nice library called <a class="reference external" href="https://github.com/zachwill/moment">Moment</a> which makes handling python dates much easier!</li>
+</ul>
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+            <hr/>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+    <p>
+      <strong>About Aiyana</strong><br/>
+        My name is Aiyana. I became a software engineer because I love solving puzzles and I love learning new things. We all wear many hats in this life. Some of the other hats I wear are mom, teacher, and student.
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/ariesunique/"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://bitbucket.org/ariesunique/"><i class="fa fa-bitbucket-square fa-lg"></i> bitbucket</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="https://aiyanabrooks.com/tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group " id="tags">
+    <li class="list-group-item tag-1">
+      <a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://aiyanabrooks.com/tag/30-day-project-challenge.html">30-day-project-challenge</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://aiyanabrooks.com/tag/pelican.html">pelican</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://aiyanabrooks.com/tag/python.html">python</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://aiyanabrooks.com/tag/nltk.html">nltk</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="https://aiyanabrooks.com/tag/recurse.html">recurse</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://aiyanabrookstesol.strikingly.com/" target="_blank">My TESOL Portfolio</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 Aiyana
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="https://aiyanabrooks.com/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://aiyanabrooks.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="https://aiyanabrooks.com/theme/js/respond.min.js"></script>
+
+
+
+
+</body>
+</html>
