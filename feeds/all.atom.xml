@@ -18,7 +18,7 @@
 &lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;&lt;span class="text-primary"&gt;Summary (TL;DR)&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The initial aim of this project was to implement a rewards system for my daughter. Good behavior earns a happy face; bad behavior earns a sad face. The total number of points earned on a given day is the difference between happy faces and sad faces. Points are accumulated per week, and can be redeemed throughout the week for various prizes (ie, good behavior earns rewards).&lt;/p&gt;
 &lt;p&gt;The front-end is written in React (javascript) and the backend is written as a Flask (python) RESTful API.&lt;/p&gt;
-&lt;p&gt;&lt;span class="text-warning"&gt;You can view the code and try it out yourself from the&lt;/span&gt; &lt;a class="reference external" href="https://github.com/ariesunique/happy_points"&gt;GitHub Repository&lt;/a&gt;.`&lt;/p&gt;
+&lt;p&gt;&lt;span class="text-warning"&gt;You can view the code and try it out yourself from the&lt;/span&gt; &lt;a class="reference external" href="https://github.com/ariesunique/happy_points"&gt;GitHub Repository&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
