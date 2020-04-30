@@ -3,7 +3,7 @@ Corpus Tool
 ===========
 
 :date: 2019-11-01 22:45
-:tags: flask
+:tags: flask, projects, nltk, python
 :category: blog
 :slug: corpus-tool
 :summary: This is a small web application designed to help researchers create a corpus of student writing.

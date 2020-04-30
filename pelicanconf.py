@@ -17,6 +17,8 @@ PATH = 'content'
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
+DIRECT_TEMPLATES = ['index', 'tags', 'archives']
+
 
 ###############################
 #   THEME SETTINGS
@@ -29,12 +31,23 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['i18n_subsites', 'tag_cloud']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_ARTICLE_INFO_ON_INDEX = True  # this wills show the date on the main blog list
-DEFAULT_PAGINATION = 10
+
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
+
+MENUITEMS = (
+    ('About', '/pages/about.html'),
+    ('Projects', '/tag/projects.html'),
+    ('Blog', '/category/blog.html'),
+    ('Archives', '/archives.html')
+    )
+
+DISPLAY_ARTICLE_INFO_ON_INDEX = True  # this will show the date on the main blog list
+DEFAULT_PAGINATION = 5
+DEFAULT_DATE_FORMAT = '%B %d, %Y'
+DEFAULT_CATEGORY = 'blog'
 
 DOCUTIL_CSS = True
-
 
 ###############################
 #   SIDEBAR SETTINGS

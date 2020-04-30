@@ -2,7 +2,6 @@ Welcome
 ##################
 
 :url:
-:save_as: index.html
 :status: hidden
 
 .. role:: lead

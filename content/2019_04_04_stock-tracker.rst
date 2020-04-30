@@ -4,7 +4,7 @@ Stock Tracker
 
 :date: 2019-04-04 8:21
 :tags: 30-day-project-challenge
-:category: blog
+:category: blog, projects
 :slug: stock-tracker
 :summary: A CLI tool to display a stock quote for a given stock symbol.
 

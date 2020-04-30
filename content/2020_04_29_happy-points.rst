@@ -3,7 +3,7 @@ Happy Points: A Homeschooling Rewards App
 ###########################################
 
 :date: 2020-04-29 10:07
-:tags: flask, python
+:tags: flask, python, projects
 :category: blog
 :slug: happy-points
 :summary: An application to track your child's behavior. The application is built using React on the frontend and Flask on the backend. Guardians can log good and bad behavior as "happy" or "sad" faces, and include notes about the behavior.
