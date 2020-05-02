@@ -28,7 +28,7 @@ THEME = "themes/pelican-bootstrap3"
 BOOTSTRAP_THEME = 'cerulean'  #try flatly if you get sick of cerulean
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['i18n_subsites', 'tag_cloud']
+PLUGINS = ['i18n_subsites', 'tag_cloud', 'neighbors']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 
