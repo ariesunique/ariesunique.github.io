@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>nltk - Aiyana Brooks</title>
+    <title>Game of Life - Aiyana Brooks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,16 +10,22 @@
 
     <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
 
+<link rel="canonical" href="https://aiyanabrooks.com/game-of-life.html">
 
-    <meta name="author" content="Aiyana" />
-    <meta name="keywords" content="nltk" />
+        <meta name="author" content="Aiyana" />
+        <meta name="keywords" content="python,jupyter" />
+        <meta name="description" content="Implementation of Conway&#39;s Game of Life program in a Jupyter Notebook." />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Aiyana Brooks" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Aiyana Brooks"/>
-        <meta property="og:url" content="https://aiyanabrooks.com"/>
-        <meta property="og:description" content="Aiyana Brooks"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Game of Life"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/game-of-life.html"/>
+        <meta property="og:description" content="Implementation of Conway&#39;s Game of Life program in a Jupyter Notebook."/>
+        <meta property="article:published_time" content="2020-05-11" />
+            <meta property="article:section" content="blog" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="jupyter" />
+            <meta property="article:author" content="Aiyana" />
 
 
 
@@ -73,12 +79,23 @@ Aiyana Brooks            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="https://aiyanabrooks.com/corpus-tool.html">Corpus Tool</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="https://aiyanabrooks.com/game-of-life.html"
+                       rel="bookmark"
+                       title="Permalink to Game of Life">
+                        Game of Life
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-11-01T22:45:00-04:00"> November 01, 2019</time>
+        <i class="fa fa-calendar"></i><time datetime="2020-05-11T20:22:00-04:00"> May 11, 2020</time>
     </span>
 
 
@@ -86,49 +103,38 @@ Aiyana Brooks            </a>
 
 
 <span class="text-primary"><em>TAGS</em></span>
-	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
-        /
-	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
-        /
-	<a href="https://aiyanabrooks.com/tag/nltk.html">nltk</a>
-        /
 	<a href="https://aiyanabrooks.com/tag/python.html">python</a>
+        /
+	<a href="https://aiyanabrooks.com/tag/jupyter.html">jupyter</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p class="first last">This is a small web application designed to help researchers create a corpus of student writing.</p>
-
-                    <a class="text-primary text-uppercase" href="https://aiyanabrooks.com/corpus-tool.html"><small><strong>more ...</strong></small></a>
                 </div>
-            </article>
+                <p><span class="lead">I wanted to play around with Jupyter Notebooks and modular programming and decided to try to implement John Conway's &quot;Game of Life&quot;.</span></p>
+<p>Conway's <a class="reference external" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> describes a set of rules that govern a universe of cells, where each cell can have one of two states: ALIVE or DEAD (aka &quot;on&quot; or &quot;off&quot;). For a given configration of cells, the next iteration is determined by simultaneously applying the rules to each cell in the current configuration. The simplified rules are as follows:</p>
+<ul class="simple">
+<li>Any live cell with two or three live neighbours survives.</li>
+<li>Any dead cell with three live neighbours becomes a live cell.</li>
+<li>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</li>
+</ul>
+<p>I had attempted to implement Conway's Game of Life before, and while it wasn't a lot of lines of code to implement, I found that the code wasn't the most readable. For this implemenation, I wanted to make the code as readable as possible by also making it very modular. I also wanted to use this as an excuse to play with Jupyter notebooks.</p>
+<p><a class="reference external" href="https://github.com/ariesunique/python-shorts/blob/master/Game%20of%20Life.ipynb">Click here</a> to see my first attempt at creating a Jupyter Notebook to implemet Game of Life. While the code works and is very readable, a few of <a class="reference external" href="https://aiyanabrooks.com/recurse-center.html">my colleagues</a> at <a class="reference external" href="https://www.recurse.com/">Recurse Center</a> shared their opinion that they thought I included too many helper functions. So, I decided to heed their advice and make a second attempt that refactored the code a bit. <a class="reference external" href="https://github.com/ariesunique/python-shorts/blob/master/Game%20of%20Life%20Refactored.ipynb">Here is attempt #2</a>.</p>
+<img alt="Game of Life" src="../images/game_of_life_screenshot.png" />
+<p><br />
+There are a lot of fun things you can do with Game of Life. Here's a <a class="reference external" href="https://www.theguardian.com/science/alexs-adventures-in-numberland/2014/dec/15/the-game-of-life-a-beginners-guide">great write-up</a> about some of the interesting patterns, and here is <a class="reference external" href="https://www.youtube.com/watch?v=E8kUJL04ELA&amp;list=PLt5AfwLFPxWIL8XA1npoNAHseS-j1y-7V&amp;index=1">an interview with John Conway</a>.</p>
+
+            </div>
+            <!-- /.entry-content -->
+<br> 
+<ul class="pager">
+     <li class="previous">
+         <a href="https://aiyanabrooks.com/happy-points.html">
+             PREV ARTICLE: Happy Points: A Homeschooling Rewards App
+         </a>
+     </li>
+</ul>        </article>
+    </section>
+
             <hr/>
-            <article>
-                <h2><a href="https://aiyanabrooks.com/site-word-counter.html">Site Word Counter</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-10-31T14:29:00-04:00"> October 31, 2019</time>
-    </span>
-
-
-
-
-
-<span class="text-primary"><em>TAGS</em></span>
-	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
-        /
-	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
-        /
-	<a href="https://aiyanabrooks.com/tag/nltk.html">nltk</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p class="first last">This is a Flask application that will take a url as input and display a word frequency list.</p>
-
-                    <a class="text-primary text-uppercase" href="https://aiyanabrooks.com/site-word-counter.html"><small><strong>more ...</strong></small></a>
-                </div>
-            </article>
-            <hr/>
-
-<a class="text-primary text-uppercase" href="https://aiyanabrooks.com/archives.html"><small><strong>view all ...</strong></small></a>            <hr/>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -205,7 +211,7 @@ Aiyana Brooks            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2019 Aiyana
+         <div class="col-xs-10">&copy; 2020 Aiyana
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
