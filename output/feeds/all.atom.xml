@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2020-05-11T20:22:00-04:00</updated><entry><title>Game of Life</title><link href="https://aiyanabrooks.com/game-of-life.html" rel="alternate"></link><published>2020-05-11T20:22:00-04:00</published><updated>2020-05-11T20:22:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2020-05-11:/game-of-life.html</id><summary type="html">&lt;p class="first last"&gt;Implementation of Conway's Game of Life program in a Jupyter Notebook.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Aiyana Brooks</title><link href="https://aiyanabrooks.com/" rel="alternate"></link><link href="https://aiyanabrooks.com/feeds/all.atom.xml" rel="self"></link><id>https://aiyanabrooks.com/</id><updated>2021-12-28T12:14:00-05:00</updated><entry><title>Advent of Code 2021</title><link href="https://aiyanabrooks.com/advent-of-code-2021.html" rel="alternate"></link><published>2021-12-28T12:14:00-05:00</published><updated>2021-12-28T12:14:00-05:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2021-12-28:/advent-of-code-2021.html</id><summary type="html">&lt;p class="first last"&gt;My first time participating in Advent of Code.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;This was the first time I attempted &lt;a class="reference external" href="https://adventofcode.com/2021"&gt;Advent of Code&lt;/a&gt;.
+In a nutshell, Advent of Code is a website that offers a daily programming puzzle during the month of December.
+The puzzles are holiday-themed and are a fun, silly way to brush up on algorithms and data structures.
+The puzzles increase in complexity each day and can become time-consuming. My attempts are in
+&lt;a class="reference external" href="https://github.com/ariesunique/advent-of-code"&gt;this github repo&lt;/a&gt;.
+I'm happy with my overall progress and look forward to playing again next year!&lt;/p&gt;
+</content><category term="blog"></category><category term="python"></category><category term='"advent of code"'></category></entry><entry><title>Game of Life</title><link href="https://aiyanabrooks.com/game-of-life.html" rel="alternate"></link><published>2020-05-11T20:22:00-04:00</published><updated>2020-05-11T20:22:00-04:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2020-05-11:/game-of-life.html</id><summary type="html">&lt;p class="first last"&gt;Implementation of Conway's Game of Life program in a Jupyter Notebook.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;&lt;span class="lead"&gt;I wanted to play around with Jupyter Notebooks and modular programming and decided to try to implement John Conway's &amp;quot;Game of Life&amp;quot;.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Conway's &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"&gt;Game of Life&lt;/a&gt; describes a set of rules that govern a universe of cells, where each cell can have one of two states: ALIVE or DEAD (aka &amp;quot;on&amp;quot; or &amp;quot;off&amp;quot;). For a given configration of cells, the next iteration is determined by simultaneously applying the rules to each cell in the current configuration. The simplified rules are as follows:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -18,17 +25,17 @@ There are a lot of fun things you can do with Game of Life. Here's a &lt;a class
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#summary-tl-dr" id="id1"&gt;&lt;span class="text-primary"&gt;Summary (TL;DR)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#background-motivation" id="id2"&gt;&lt;span class="text-primary"&gt;Background (Motivation)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#technical-specs-and-development-process" id="id3"&gt;&lt;span class="text-primary"&gt;Technical Specs and Development Process&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#what-i-learned" id="id4"&gt;&lt;span class="text-primary"&gt;What I Learned&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#summary-tl-dr" id="toc-entry-1"&gt;&lt;span class="text-primary"&gt;Summary (TL;DR)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#background-motivation" id="toc-entry-2"&gt;&lt;span class="text-primary"&gt;Background (Motivation)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#technical-specs-and-development-process" id="toc-entry-3"&gt;&lt;span class="text-primary"&gt;Technical Specs and Development Process&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#what-i-learned" id="toc-entry-4"&gt;&lt;span class="text-primary"&gt;What I Learned&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="summary-tl-dr"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;&lt;span class="text-primary"&gt;Summary (TL;DR)&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;&lt;span class="text-primary"&gt;Summary (TL;DR)&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The initial aim of this project was to implement a rewards system for my daughter. Good behavior earns a happy face; bad behavior earns a sad face. The total number of points earned on a given day is the difference between happy faces and sad faces. Points are accumulated per week, and can be redeemed throughout the week for various prizes (ie, good behavior earns rewards).&lt;/p&gt;
 &lt;p&gt;The front-end is written in React (javascript) and the backend is written as a Flask (python) RESTful API.&lt;/p&gt;
 &lt;p&gt;&lt;span class="text-warning"&gt;You can view the code and try it out yourself from the&lt;/span&gt; &lt;a class="reference external" href="https://github.com/ariesunique/happy_points"&gt;GitHub Repository&lt;/a&gt;.&lt;/p&gt;
@@ -37,7 +44,7 @@ There are a lot of fun things you can do with Game of Life. Here's a &lt;a class
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="background-motivation"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;&lt;span class="text-primary"&gt;Background (Motivation)&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;&lt;span class="text-primary"&gt;Background (Motivation)&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Since March 12, I (like many other parents) have been homeschooling my daughter due to novel coronavirus pandemic that has fundamentally changed life as we know it. As of the date that I am writing this, my daughter has been out of school for 6 weeks (but who’s counting).&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 My daughter is 6 years old and in first grade. Like most kids her age, she responds well to extrinsic motivation – stickers, candy, etc. The possibility of a potential reward will generally get her to be more focused on the task-at-hand. When she was in school, her teachers used an application called ClassDojo and via the app they would award children “Dojo Points” for good behavior.&lt;/p&gt;
@@ -53,7 +60,7 @@ She responded really well to this system, and this inspired me to turn this into
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="technical-specs-and-development-process"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id3"&gt;&lt;span class="text-primary"&gt;Technical Specs and Development Process&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;&lt;span class="text-primary"&gt;Technical Specs and Development Process&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;“Happy Faces” is a web application which tracks a child’s behavior using happy faces and sad faces. It is basically the web version of exactly what I was doing on paper.&lt;/p&gt;
 &lt;img alt="Happy Points app" src="../images/happy-points-with-data-820x461.png" /&gt;
 &lt;p&gt;&lt;br /&gt;
@@ -64,7 +71,7 @@ The React front-end is a single page consisting of two main components. PointsVi
 The backend consists of a REST API written in Flask. The API consists of a single endpoint. I’m using Flask-SqlAlchemy for the ORM, and sqlite for the local database (although if I move this to heroku, I would use postgres).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-i-learned"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id4"&gt;&lt;span class="text-primary"&gt;What I Learned&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;&lt;span class="text-primary"&gt;What I Learned&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;This was a fun project to work on. I presented a brief demo of this at the &lt;a class="reference external" href="https://aiyanabrooks.com/recurse-center.html"&gt;Recurse Center&lt;/a&gt; (&lt;a class="reference external" href="https://docs.google.com/presentation/d/1QM0Tzeo21AUVCAAQKMsd2T-eQKxw0LWhXybTzy9LUas/edit?usp=sharing"&gt;click here&lt;/a&gt; for slides).&lt;/p&gt;
 &lt;p&gt;Below is a random list of some things I learned/ noticed while working on this.&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -80,34 +87,34 @@ The backend consists of a REST API written in Flask. The API consists of a singl
 &lt;div class="contents topic" id="contents"&gt;
 &lt;p class="topic-title"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#what-is-pelican" id="id1"&gt;&lt;span class="text-primary"&gt;What is Pelican?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#how-can-i-get-started" id="id2"&gt;&lt;span class="text-primary"&gt;How can I get started?&lt;/span&gt;&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#create-a-virtual-environment-and-install-pelican" id="id3"&gt;&lt;span class="text-warning"&gt;1. Create a virtual environment and install pelican&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#create-a-project-and-quickstart-your-site" id="id4"&gt;&lt;span class="text-warning"&gt;2. Create a project and quickstart your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#create-some-content" id="id5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#generate-your-output" id="id6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#preview-your-site" id="id7"&gt;&lt;span class="text-warning"&gt;5. Preview your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#what-is-pelican" id="toc-entry-1"&gt;&lt;span class="text-primary"&gt;What is Pelican?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#how-can-i-get-started" id="toc-entry-2"&gt;&lt;span class="text-primary"&gt;How can I get started?&lt;/span&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#create-a-virtual-environment-and-install-pelican" id="toc-entry-3"&gt;&lt;span class="text-warning"&gt;1. Create a virtual environment and install pelican&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#create-a-project-and-quickstart-your-site" id="toc-entry-4"&gt;&lt;span class="text-warning"&gt;2. Create a project and quickstart your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#create-some-content" id="toc-entry-5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#generate-your-output" id="toc-entry-6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#preview-your-site" id="toc-entry-7"&gt;&lt;span class="text-warning"&gt;5. Preview your site&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="#what-s-next" id="id8"&gt;&lt;span class="text-primary"&gt;What's next?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="#what-s-next" id="toc-entry-8"&gt;&lt;span class="text-primary"&gt;What's next?&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-is-pelican"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id1"&gt;&lt;span class="text-primary"&gt;What is Pelican?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-1"&gt;&lt;span class="text-primary"&gt;What is Pelican?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; is a static site generator written in Python. In a nutshell, a static site generator is a library/framework/codebase that generates HTML files using rules specified in config files and content written in some type of markup language. With a static site generator, the HTML files are generated on your local machine, and you push all the files (ie, the entire website) to your web server. To read more about static site generators, &lt;a class="reference external" href="https://davidwalsh.name/introduction-static-site-generators"&gt;click here&lt;/a&gt; or &lt;a class="reference external" href="https://www.infoworld.com/article/3340827/what-is-a-static-site-generator-static-website-tools-explained.html"&gt;here&lt;/a&gt;. There are &lt;a class="reference external" href="https://www.staticgen.com/"&gt;many static site generators&lt;/a&gt;, but I like Pelican because it is built in Python, which is my language of choice these days. This makes it easy for me to tinker with the underlying code.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="section" id="how-can-i-get-started"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id2"&gt;&lt;span class="text-primary"&gt;How can I get started?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-2"&gt;&lt;span class="text-primary"&gt;How can I get started?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Getting started with Pelican is extremely easy.&lt;/p&gt;
 &lt;p&gt;Make sure you have a python environment already setup. If you do not, you can easily work in the cloud using &lt;a class="reference external" href="https://codeanywhere.com/"&gt;CodeAnywhere&lt;/a&gt;  - nothing to install, simply create a free account on CodeAnywhere to get started. Then create a new Container and choose the python stack which already has pip, pyenv, and virtualenv preinstalled (you can choose between Ubuntu or Centos).&lt;/p&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="create-a-virtual-environment-and-install-pelican"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id3"&gt;&lt;span class="text-warning"&gt;1. Create a virtual environment and install pelican&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-3"&gt;&lt;span class="text-warning"&gt;1. Create a virtual environment and install pelican&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I like to keep all of my virtual environments in a separate &amp;quot;envs&amp;quot; directory, so that I can easily see how many virtual environments I have on my system. Below are the commands that I ran to set up my virtual environment and install pelican. &lt;em&gt;Note, that after creating a virtual environment using pip, it is always a good idea to update your pip, as the version in your virtual env might not be the most up-to-date (regardless of the pip version in your main python installation).&lt;/em&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; mkdir envs
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; envs
@@ -122,28 +129,28 @@ The backend consists of a REST API written in Flask. The API consists of a singl
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="create-a-project-and-quickstart-your-site"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id4"&gt;&lt;span class="text-warning"&gt;2. Create a project and quickstart your site&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-4"&gt;&lt;span class="text-warning"&gt;2. Create a project and quickstart your site&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Pelican comes with a handy command-line tool that will enable you to quickly set up your site by answering a few questions. You will need to create a directory that will house your site and cd into that directory. Then run the &amp;quot;pelican-quickstart&amp;quot; command.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; mkdir mysite
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; mysite
 &amp;gt;&amp;gt; pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;For most of these, it is fine to leave the defaults or to simply choose &amp;quot;no&amp;quot;. You will learn more about customization later, but for now, our goal is to simply and quickly get a site up and running. The main two items to focus on are: (question 2) &lt;em&gt;What will be the title of this website?&lt;/em&gt; and (question 3) &lt;em&gt;Who will be the author of this website?&lt;/em&gt; (Note: my answers to these questions were &amp;quot;My Magical Website&amp;quot; and &amp;quot;Harry Potter&amp;quot;)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Welcome to pelican-quickstart v4.2.0.&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Welcome to pelican-quickstart v4.2.0.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;This script will help you create a new Pelican-based website.&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;This script will help you create a new Pelican-based website.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Please answer the following questions so this script can generate the files needed by Pelican.&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Please answer the following questions so this script can generate the files needed by Pelican.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Where do you want to create your new web site? [.]&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the title of this web site? My Magical Website&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Who will be the author of this web site? Harry Potter&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the default language of this web site? [en]&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to enable article pagination? (Y/n) n&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What is your time zone? [Europe/Paris]&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) n&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Done. Your new project is available at /home/cabox/workspace/mysite&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Where do you want to create your new web site? [.]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the title of this web site? My Magical Website&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Who will be the author of this web site? Harry Potter&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What will be the default language of this web site? [en]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to enable article pagination? (Y/n) n&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; What is your time zone? [Europe/Paris]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;&amp;gt; Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) n&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Done. Your new project is available at /home/cabox/workspace/mysite&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
 After running pelican-quickstart, your directory structure will look similar to below:&lt;/p&gt;
@@ -157,27 +164,27 @@ Notice that the command created two empty directories -- &lt;strong&gt;content&l
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="create-some-content"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-5"&gt;&lt;span class="text-warning"&gt;3. Create some content&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Pelican enables you to write your content using either &lt;a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html"&gt;reStructuredText&lt;/a&gt; or &lt;a class="reference external" href="https://www.markdownguide.org/"&gt;Markdown&lt;/a&gt;. In order to use Markdown, you will need to install the markdown library for python ( &lt;em&gt;pip install markdown&lt;/em&gt; ). For this example, I will use reStructuredText since it is supported out-of-the-box. Move into the &amp;quot;content&amp;quot; directory. Create a file called &lt;em&gt;article.rst&lt;/em&gt; and then move back up to the top level directory of your website.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; content
 &amp;gt;&amp;gt; vi article.rst
 &amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ..
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Below are sample contents of &lt;em&gt;article.rst&lt;/em&gt;. You must include a title and a date directive. In this case, the title of this article is &amp;quot;The Boy Who Lived&amp;quot; and it has a date of &lt;em&gt;2020-04-01&lt;/em&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;The Boy Who Lived&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;==================&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;The Boy Who Lived&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;==================&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;:date&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;2020-04-01&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;:date&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;2020-04-01&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Hi, my name is Harry Potter. Some people know me as &amp;quot;the boy who lived&amp;quot;. When I was a baby,&lt;/span&gt;
-&lt;span class="l l-Scalar l-Scalar-Plain"&gt;I defeated the most eveil wizard ever. But I didn&amp;#39;t know I was magical until after my 11th birthday.&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;Hi, my name is Harry Potter. Some people know me as &amp;quot;the boy who lived&amp;quot;. When I was a baby,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;I defeated the most eveil wizard ever. But I didn&amp;#39;t know I was magical until after my 11th birthday.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="line-block"&gt;
 &lt;div class="line"&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="generate-your-output"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-6"&gt;&lt;span class="text-warning"&gt;4. Generate your output&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Now you can run the pelican command to generate the html files for your website. From your top-level directory, run &lt;em&gt;pelican content&lt;/em&gt;. This tells pelican to look in a directory called &amp;quot;content&amp;quot; for the markup files containing the data for your site (as well as any other static content that might be needed, such as images).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; pelican content
 &lt;/pre&gt;&lt;/div&gt;
@@ -191,7 +198,7 @@ Most of these files are &amp;quot;collection&amp;quot; pages that will display v
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="preview-your-site"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="#id7"&gt;&lt;span class="text-warning"&gt;5. Preview your site&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="#toc-entry-7"&gt;&lt;span class="text-warning"&gt;5. Preview your site&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Now you're ready to see how this looks in your development environment. Move into the output directory and start up a python server. Then navigate to your localhost and view the page. &lt;em&gt;(Note: If you are using CodeAnywhere, you will need to pass 3000 to the server command to specify the port. So the command will look like ( python -m http.server 3000 ). Additionally, instead of navigating to localhost, you will click on the url of your container which you can find by right-clicking on the container name and choosing Info).&lt;/em&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class="nb"&gt;cd&lt;/span&gt; output
 &amp;gt;&amp;gt; python -m http.server
@@ -203,7 +210,7 @@ Most of these files are &amp;quot;collection&amp;quot; pages that will display v
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="what-s-next"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="#id8"&gt;&lt;span class="text-primary"&gt;What's next?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="#toc-entry-8"&gt;&lt;span class="text-primary"&gt;What's next?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Voila! In only a few minutes, you have a full-fledged website running on your local environment. The next things you would want to do are add more content, customize the look and feel of your site, and then deploy it somewhere so your friends and family can view it.&lt;/p&gt;
 &lt;/div&gt;
 </content><category term="blog"></category><category term="pelican"></category></entry><entry><title>Recurse Center</title><link href="https://aiyanabrooks.com/recurse-center.html" rel="alternate"></link><published>2020-02-17T18:56:00-05:00</published><updated>2020-02-17T18:56:00-05:00</updated><author><name>Aiyana</name></author><id>tag:aiyanabrooks.com,2020-02-17:/recurse-center.html</id><summary type="html">&lt;p class="first last"&gt;For the past 6 weeks, I have been part of an amazing program called the Recurse Center. In this post, I share a little bit about what the Recurse Center is, how it works, and why it is a wonderful opportunity for anyone who is excited about technology.&lt;/p&gt;
@@ -214,7 +221,7 @@ Most of these files are &amp;quot;collection&amp;quot; pages that will display v
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; a school&lt;/li&gt;
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; a bootcamp&lt;/li&gt;
 &lt;li&gt;It is &lt;em&gt;NOT&lt;/em&gt; an internship or apprenticeship&lt;/li&gt;
-&lt;li&gt;There are no teachers, classes, tests, midterms, assignments, or deadlines &lt;a class="footnote-reference" href="#id2" id="id1"&gt;[1]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There are no teachers, classes, tests, midterms, assignments, or deadlines &lt;a class="footnote-reference" href="#footnote-1" id="footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;There are no bosses, supervisors, managers, evaluations, or performance reviews&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class="lead"&gt;&amp;quot;The Recurse Center is a self-directed, community-driven educational retreat for programmers in New York City.&amp;quot;&lt;/span&gt;
@@ -258,10 +265,10 @@ Recrusers decide when their &lt;em&gt;personal objectives&lt;/em&gt; have been m
 &lt;/div&gt;
 &lt;p&gt;&lt;span class="lead"&gt;I attended the Recurse Center because I wanted to be around other people excited about technology, I wanted to learn more about web development and data analystics using python, and I wanted to get back into the habit of coding daily.&lt;/span&gt;&lt;/p&gt;
 &lt;hr class="docutils" /&gt;
-&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;table class="docutils footnote" frame="void" id="footnote-1" rules="none"&gt;
 &lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
-&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In actuality, everyone at Recurse is both a teacher and a student. We are all experts at something and beginners at something else.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#footnote-reference-1"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In actuality, everyone at Recurse is both a teacher and a student. We are all experts at something and beginners at something else.&lt;/td&gt;&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>SPELL Attendance Tracker - Aiyana Brooks</title>
+    <title>Advent of Code 2021 - Aiyana Brooks</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,21 +10,21 @@
 
     <link href="https://aiyanabrooks.com/images/favicon.png" rel="icon">
 
-<link rel="canonical" href="https://aiyanabrooks.com/attendance-tracker.html">
+<link rel="canonical" href="https://aiyanabrooks.com/advent-of-code-2021.html">
 
         <meta name="author" content="Aiyana" />
-        <meta name="keywords" content="projects,flask" />
-        <meta name="description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance." />
+        <meta name="keywords" content="python,"advent of code"" />
+        <meta name="description" content="My first time participating in Advent of Code." />
 
         <meta property="og:site_name" content="Aiyana Brooks" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="SPELL Attendance Tracker"/>
-        <meta property="og:url" content="https://aiyanabrooks.com/attendance-tracker.html"/>
-        <meta property="og:description" content="This was my first attempt at creating a Flask application. The goal was to create an online attendance tracking tool that could be used by teachers to store and monitor student attendance."/>
-        <meta property="article:published_time" content="2019-10-31" />
+        <meta property="og:title" content="Advent of Code 2021"/>
+        <meta property="og:url" content="https://aiyanabrooks.com/advent-of-code-2021.html"/>
+        <meta property="og:description" content="My first time participating in Advent of Code."/>
+        <meta property="article:published_time" content="2021-12-28" />
             <meta property="article:section" content="blog" />
-            <meta property="article:tag" content="projects" />
-            <meta property="article:tag" content="flask" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content=""advent of code"" />
             <meta property="article:author" content="Aiyana" />
 
 
@@ -83,10 +83,10 @@ Aiyana Brooks            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="https://aiyanabrooks.com/attendance-tracker.html"
+                    <a href="https://aiyanabrooks.com/advent-of-code-2021.html"
                        rel="bookmark"
-                       title="Permalink to SPELL Attendance Tracker">
-                        SPELL Attendance Tracker
+                       title="Permalink to Advent of Code 2021">
+                        Advent of Code 2021
                     </a>
                 </h1>
             </header>
@@ -95,7 +95,7 @@ Aiyana Brooks            </a>
                     <div class="panel-body">
 <footer class="post-info">
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2019-10-31T09:20:00-04:00"> October 31, 2019</time>
+        <i class="fa fa-calendar"></i><time datetime="2021-12-28T12:14:00-05:00"> December 28, 2021</time>
     </span>
 
 
@@ -103,114 +103,26 @@ Aiyana Brooks            </a>
 
 
 <span class="text-primary"><em>TAGS</em></span>
-	<a href="https://aiyanabrooks.com/tag/projects.html">projects</a>
+	<a href="https://aiyanabrooks.com/tag/python.html">python</a>
         /
-	<a href="https://aiyanabrooks.com/tag/flask.html">flask</a>
+	<a href="https://aiyanabrooks.com/tag/advent-of-code.html">"advent of code"</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>For a while I was teaching English at a community program called SPELL.
-The program required us to turn in paper attendance sheets each week.
-For my first Flask project, I wanted to create an online attendance tool for
-teachers to more easily track and turn in their attendance. I used Bootstrap for
-the UI and mysql for the database. After completing the initial screens,
-I decided to refactor the project and start again (see <a class="reference internal" href="#take-2">Take 2</a>). Both versions of the code
-are written in Python 2.7 which has since been deprecated. This code never went live,
-but it was a good learning experience.</p>
-<div class="section" id="take-1">
-<h2>Take 1</h2>
-<p>This code lives in a <a class="reference external" href="https://bitbucket.org/ariesunique/speller/src/master/">Bitbucket repository</a></p>
-<p><strong>/index - This is the index/ Welcome page</strong></p>
-<img alt="Index page" src="../images/Spell-index.png" />
-<p><strong>/register - Enable users to register</strong></p>
-<img alt="Register page" src="../images/Spell-register.png" />
-<p><strong>/login - Standard Login Page</strong></p>
-<img alt="Login page" src="../images/Spell-login.png" />
-<p><strong>/login - After a new user registers, he is redirected to the login page.</strong></p>
-<img alt="Login page after redirect" src="../images/Spell-login-redirect.png" />
-<p><strong>/dashboard - There was supposed to be more to this screen, but I decided to refactor
-the project and start from scratch.</strong></p>
-<img alt="Empty Dashboard page" src="../images/Spell-dashboard.png" />
-</div>
-<div class="section" id="take-2">
-<h2>Take 2</h2>
-<p>This code lives in a BitBucket repository called <a class="reference external" href="https://bitbucket.org/ariesunique/spelldemo/src">SpellDemo</a>
-For this second attempt, I used a different Bootstrap theme that was less bright, and I simplified the
-code base. In the first attempt, I had tried to use blueprints and the codebase became confusing. This second trial,
-I decided it was better to start simple, and refactor later, if needed.</p>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/login - Standard Login Page</strong></p>
-<img alt="Standard Login page" src="../images/spelldemo-login.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/logout redirects back to the Login page with a message to the user that he has successfully logged out</strong></p>
-<img alt="Login page after redirect from logout" src="../images/spelldemo-logout-redirect.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/dashboard - Admin dashboard</strong>
-SPELL is a community program that recurs twice each year for 12 weeks each semester.
-The idea behind this screen is that the administrator of the program would set the current
-semester of the program (ie, Winter 2016, Fall 2016), and enter the names of enrolled
-students and assign them to classes.</p>
-<img alt="Admin Dashboard" src="../images/spelldemo-admin-dashboard.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/attendance - Morning attendance tab</strong>
-Teachers in SPELL teach two classes - one in the morning and one in the afternoon.
-This attendance page enables teachers to enter attendance for both their classes.
-The page uses javascript and Bootstrap to provide a tab navigation so teacher can easily
-toggle between morning and afternoon attendance for that day. The teacher chooses
-a date first and is shown a list of all the students in his morning and afternoon classes.
-The teacher can use the radio buttons to mark the attendance accordingly, and optionally
-can enter a comment.</p>
-<img alt="Morning attendance page" src="../images/spelldemo-attendance-morning.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/attendance - Afternoon attendance tab</strong></p>
-<img alt="Afternoon attendance page" src="../images/spelldemo-attendance-afternoon.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/students - List of students in this teacher's class</strong></p>
-<img alt="Student list page" src="../images/spelldemo-students-list.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/student/add - Add student</strong></p>
-<img alt="Add student page" src="../images/spelldemo-students-add.png" />
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<p><strong>/student/edit/{id} - Edit student</strong></p>
-<img alt="Edit student page" src="../images/spelldemo-students-edit.png" />
-</div>
+                <p>This was the first time I attempted <a class="reference external" href="https://adventofcode.com/2021">Advent of Code</a>.
+In a nutshell, Advent of Code is a website that offers a daily programming puzzle during the month of December.
+The puzzles are holiday-themed and are a fun, silly way to brush up on algorithms and data structures.
+The puzzles increase in complexity each day and can become time-consuming. My attempts are in
+<a class="reference external" href="https://github.com/ariesunique/advent-of-code">this github repo</a>.
+I'm happy with my overall progress and look forward to playing again next year!</p>
 
             </div>
             <!-- /.entry-content -->
 <br> 
 <ul class="pager">
      <li class="previous">
-         <a href="https://aiyanabrooks.com/stock-tracker.html">
-             PREV ARTICLE: Stock Tracker
-         </a>
-     </li>
-     <li class="next">
-         <a href="https://aiyanabrooks.com/site-word-counter.html">
-             NEXT ARTICLE: Site Word Counter
+         <a href="https://aiyanabrooks.com/game-of-life.html">
+             PREV ARTICLE: Game of Life
          </a>
      </li>
 </ul>        </article>

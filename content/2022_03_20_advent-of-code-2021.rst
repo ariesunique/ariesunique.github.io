@@ -1,0 +1,16 @@
+###################
+Advent of Code 2021
+###################
+
+:date: 2021-12-28 12:14
+:tags: python, "advent of code"
+:category: blog
+:slug: advent-of-code-2021
+:summary: My first time participating in Advent of Code.
+
+This was the first time I attempted `Advent of Code <https://adventofcode.com/2021>`_.
+In a nutshell, Advent of Code is a website that offers a daily programming puzzle during the month of December.
+The puzzles are holiday-themed and are a fun, silly way to brush up on algorithms and data structures.
+The puzzles increase in complexity each day and can become time-consuming. My attempts are in 
+`this github repo <https://github.com/ariesunique/advent-of-code>`_.
+I'm happy with my overall progress and look forward to playing again next year!
